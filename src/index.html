@@ -1,12 +1,83 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <script src="main.js" type="module"></script>
-    <button>Prueba</button>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Los Simpsons</h1>
+  </header>
+  <main>
+    <h2>Filtrar</h2>
+    <label>Rango de edad</label>
+    <select>
+      <option value="opcion1">Selecciona una opción</option>
+      <option value="opcion1">De 1881 a 1920</option>
+      <option value="opcion1">De 1921 a 1960</option>
+      <option value="opcion1">De 1961 a 1990</option>
+    </select>
+    <label>Familia</label>
+    <select>
+      <option value="opcion1">Selecciona una opción</option>
+      <option value="opcion1">Simpsons</option>
+      <option value="opcion1">Flanders</option>
+      <option value="opcion1">Bouvier</option>
+      <option value="opcion1">Wiggum</option>
+      <option value="opcion1">Amistades</option>
+    </select>
+    <label>Lugar de Trabajo</label>
+    <select>
+      <option value="opcion1">Selecciona una opción</option>
+      <option value="opcion1">Escuela</option>
+      <option value="opcion1">Estacion de Policia</option>
+      <option value="opcion1">Hogar</option>
+      <option value="opcion1">Planta Nuclear</option>
+      <option value="opcion1">Lugares Varios</option>
+    </select>
+    <button id="limpiar">Limpiar</button>
+  </main>
+  <script src="main.js" type="module"></script>
+  <div id="root">
+    <ul>
+      <li id="lista">Homero Simpson
+        <dl itemscope itemtype="Homero Simpson">
+          <img
+            src="http://www.pandaancha.mx/plds/articulos/4bf04095762666e2e6b288e55796834e585710389.jpg"
+            alt="HomeroSimpson" width="280" height="180"  />
+        <!--<dt>Nombre:</dt>
+          <dd itemprop="name">Homero Simpson</dd>-->
+          <dt>Profesion:</dt>
+          <dd itemprop="description">Inspector en la Planta Nuclear</dd>
+          <dt>Año de nacimiento:</dt>
+          <dd itemprop="yearOfBirth">1956</dd>
+          </dl>
+      </li>
+      <li id="lista">Marge Simpson
+        <dl itemscope itemtype="MargeSimpson">
+          <img src="https://files.lafm.com.co/assets/public/styles/img_node_706x392/public/margee.jpg.webp?VersionId=GflE2U9_BagmKBsoTxTgfT55Qc7.qBNo&itok=dghYuzBK" alt="MargeSimpson" width="280" height="180" />
+          <dt>Nombre:</dt>
+          <dd itemprop="name">Marge Simpson</dd>
+          <dt>Profesion:</dt>
+          <dd itemprop="description">Ama de Casa</dd>
+          <dt>Año de nacimiento:</dt>
+          <dd itemprop="yearOfBirth">1956</dd>
+        </dl>
+      </li>
+      <li id="lista"> Lisa Simpson
+        <dl itemscope itemtype="LisaSimpson">
+          <img src="https://assets.stickpng.com/images/5eb95cf617f3c600044a2915.png" alt="LisaSimpson"  width="280" height="180"  />
+          <dt>Nombre:</dt>
+          <dd itemprop="name">Lisa Simpson</dd>
+          <dt>Profesion:</dt>
+          <dd itemprop="description"></dd>
+          <dt>Año de nacimiento:</dt>
+          <dd itemprop="yearOfBirth">1956</dd>
+        </dl>
+      </li>
+    </ul>
+  </div>
+<footer>Autoras Martha Melitón & Daniela Bustamante</footer>
+</body>
 </html>

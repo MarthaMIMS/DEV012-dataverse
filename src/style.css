@@ -1,0 +1,30 @@
+body {
+    font-family: cursive;
+    background-color: rgb(243, 246, 157);
+    text-align: center;
+    
+}
+header {
+    background-color: rgb(241, 247, 75);
+    font-size: medium;
+    font-family: cursive;
+    text-align: center;
+    color: #000000;
+    padding: 20px;
+    
+}
+ul {
+    text-align: center;
+    width: 60%;
+    margin-left: 18%;
+    list-style-type: none;
+}
+li  {
+  float: left;
+  background-image: url("https://i.pinimg.com/originals/ad/1e/2c/ad1e2c0c93696b30a9a6c916cb73d4b7.jpg");
+  margin-right: 10px;
+  border: #D7C8B6 2px olid;
+  border-radius: 20px;
+  border: 3px solid #000000;
+
+}
