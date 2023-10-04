@@ -7,7 +7,7 @@ export const renderItems = (data) => {
  data.forEach(item => {
   const nombres=document.createElement('dl');
   nombres.setAttribute('itemscope','');
-  nombres.setAttribute('itemtype','HomeroSimpson');
+  nombres.setAttribute('itemtype','HomeroSimpsons');
   nombres.textContent=item.name;
   person1.appendChild(nombres);
 
