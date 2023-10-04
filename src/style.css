@@ -17,7 +17,7 @@ ul {
     margin-left: 18%;
     list-style-type: none;
 }
-li  {
+dl, dt,dd  {
   float: left;
   background-image: url("https://i.pinimg.com/564x/92/8f/92/928f9298be9a466aeba519bedfa1d541.jpg");
   margin-right: 5px;
@@ -28,5 +28,10 @@ li  {
   border: #D7C8B6 2px olid;
   border-radius: 20px;
   border: 3px solid #000000;
+}
+
+.contenedor1 {
+    border: 1px solid #000;
+    background-color: dimgrey;
 
 }

@@ -4,16 +4,18 @@
   <meta charset="utf-8">
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="main.js" type="module"></script>
 </head>
 <body>
   <header>
     <h1><img src="https://upload.wikimedia.org/wikipedia/commons/9/98/The_Simpsons_yellow_logo.svg"  width="380" height="280"/></h1>
   </header>
   <main>
-    <h2>hola</h2>
-    <input type="text" id="nombre" name="nombre" placeholder="Busca tú personaje favorito..."/><br>
+    <h2>Busca tú personaje favorito</h2>
+  <div class="contenedor1">
+    <p>
+    <input type="text" id="nombre" name="nombre" placeholder="Busca tú personaje favorito..."/></p>
     <label for="select-filter">Rango de edad</label>
-    
     <select id="select-filter" data-testid="select-filter" name="fecha">
       <option value="anio">Selecciona una opción</option>
       <option value="anio">De 1881 a 1920</option>
@@ -40,47 +42,9 @@
     </select>
     <button id="buscar">Buscar</button>
     <button id="limpiar">Limpiar</button>
-    
+  </div>   
   </main>
-  <script src="main.js" type="module"></script>
   <div id="root">
-    <ul>
-      <li id="lista">Homero Simpson
-        <dl itemscope itemtype="Homero Simpson">
-          <img
-            src="https://i.pinimg.com/originals/46/ff/22/46ff2279e21cb295ef699723318517ef.png"
-            alt="HomeroSimpson" width="270" height="180"  />
-        <!--<dt>Nombre:</dt>
-          <dd itemprop="name">Homero Simpson</dd>-->
-          <dt>Profesion:</dt>
-          <dd itemprop="description">Inspector en la Planta Nuclear</dd>
-          <dt>Año de nacimiento:</dt>
-          <dd itemprop="yearOfBirth">1956</dd>
-          </dl>
-      </li>
-      <li id="lista">Marge Simpson
-        <dl itemscope itemtype="MargeSimpson">
-          <img src="https://cloudfront-us-east-1.images.arcpublishing.com/sdpnoticias/D6KVQGD3OVPHPO5KS6Q2D6AS7Q.png" alt="MargeSimpson" width="280" height="180" />
-          <dt>Nombre:</dt>
-          <dd itemprop="name">Marge Simpson</dd>
-          <dt>Profesion:</dt>
-          <dd itemprop="description">Ama de Casa</dd>
-          <dt>Año de nacimiento:</dt>
-          <dd itemprop="yearOfBirth">1956</dd>
-        </dl>
-      </li>
-      <li id="lista"> Lisa Simpson
-        <dl itemscope itemtype="LisaSimpson">
-          <img src="https://assets.stickpng.com/images/5eb95cf617f3c600044a2915.png" alt="LisaSimpson"  width="280" height="180"  />
-          <dt>Nombre:</dt>
-          <dd itemprop="name">Lisa Simpson</dd>
-          <dt>Profesion:</dt>
-          <dd itemprop="description"></dd>
-          <dt>Año de nacimiento:</dt>
-          <dd itemprop="yearOfBirth">1956</dd>
-        </dl>
-      </li>
-    </ul>
   </div>
 <footer>Autoras Martha Melitón & Daniela Bustamante</footer>
 </body>

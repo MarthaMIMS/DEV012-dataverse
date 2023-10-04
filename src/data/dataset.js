@@ -1,7 +1,7 @@
 export default [
   {
     "id": "homer-simpson",
-    "name": "Homer Simpson",
+    "name": "Homero Simpson",
     "shortDescription": "Padre de familia y trabajador en la planta nuclear de Springfield.",
     "description": "Un hombre con una personalidad única y una vida llena de situaciones cómicas.",
     "imageUrl": "URL_DE_LA_IMAGEN_GENERADA",
