@@ -8,44 +8,34 @@
 </head>
 <body>
   <header>
-    <h1><img src="https://upload.wikimedia.org/wikipedia/commons/9/98/The_Simpsons_yellow_logo.svg"  width="380" height="280"/></h1>
+    <h1><img src="https://upload.wikimedia.org/wikipedia/commons/9/98/The_Simpsons_yellow_logo.svg" width="280" height="180"/><img src="https://assets.stickpng.com/thumbs/5a0c40db5a997e1c2cea1171.png" width="260" height="210"/></h1>
   </header>
   <main>
-    <h2>Busca tú personaje favorito_</h2>
+    <h2>Descubre datos sorprendentes de tus personajes favoritos... ¡No te los pierdas!</h2>
   <div class="contenedor1">
     <p>
-    <input type="text" id="nombre" name="nombre" placeholder="Busca tú personaje favorito..."/></p>
-    <label for="select-filter">Rango de edad</label>
-    <select id="select-filter" data-testid="select-filter" name="fecha">
-      <option value="anio">Selecciona una opción</option>
-      <option value="anio">De 1881 a 1920</option>
-      <option value="anio">De 1921 a 1960</option>
-      <option value="anio">De 1961 a 1990</option>
+    <label for="select-filter">Filter By:</label>
+    <select id="select-filter" data-testid="select-filter" name="familia">
+      <option value="familia">...</option>
+      <option value="simpsons">Simpsons</option>
+      <option value="flanders">Flanders</option>
+      <option value="bouvier">Bouvier</option>
+      <option value="wiggum">Wiggum</option>
+      <option value="amistades">Amistades</option>
     </select>
-    <label>Familia</label>
-    <select>
-      <option value="familia">Selecciona una opción</option>
-      <option value="familia">Simpsons</option>
-      <option value="familia">Flanders</option>
-      <option value="familia">Bouvier</option>
-      <option value="familia">Wiggum</option>
-      <option value="familia">Amistades</option>
+    <label for="select-sort">Sort by name:</label>
+    <select data-testid="select-sort" name:="alfabetico">
+      <option>...</option>
+      <option value="asc">A - Z</option>
+      <option value="desc">Z - A</option>
     </select>
-    <label>Lugar de Trabajo</label>
-    <select>
-      <option value="opcion1">Selecciona una opción</option>
-      <option value="opcion1">Escuela</option>
-      <option value="opcion1">Estacion de Policia</option>
-      <option value="opcion1">Hogar</option>
-      <option value="opcion1">Planta Nuclear</option>
-      <option value="opcion1">Lugares Varios</option>
-    </select>
-    <button id="buscar">Buscar</button>
-    <button id="limpiar">Limpiar</button>
+    <button data-testid="button-clear" id="limpiar">Limpiar</button>
   </div>   
   </main>
   <div id="root">
   </div>
+<div class="contenedor2">
 <footer>Autoras Martha Melitón & Daniela Bustamante</footer>
+</div>
 </body>
 </html>
