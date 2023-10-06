@@ -1,0 +1,87 @@
+[33mcommit 9ea01deadaca4d7029da5d6b64e0785d6dada634[m[33m ([m[1;36mHEAD -> [m[1;32mfeature-button[m[33m, [m[1;31morigin/feature-button[m[33m)[m
+Merge: a8749e3 6c14039
+Author: DanielaBustamante <bustamantegd@outlook.com>
+Date:   Thu Oct 5 16:17:58 2023 -0600
+
+    Cambios de datos
+
+[33mcommit 6c14039a5114aee89a4780d3f7a013d9e427d097[m[33m ([m[1;32mmain[m[33m)[m
+Author: MarthaMIMS <marthameliton1903@gmail.com>
+Date:   Wed Oct 4 17:33:58 2023 -0600
+
+    5041023_imagenes
+
+[33mcommit a8749e3112d9a56f2ec7edacd1191f7c4de5a58f[m
+Author: DanielaBustamante <bustamantegd@outlook.com>
+Date:   Wed Oct 4 11:56:38 2023 -0600
+
+    4Cambio04102023
+
+[33mcommit 3d6f284dd9ef9f3c248a79b238ce14b746b02e16[m
+Author: DanielaBustamante <bustamantegd@outlook.com>
+Date:   Wed Oct 4 11:49:38 2023 -0600
+
+    3cambio04102023
+
+[33mcommit b1299a28e2985501f9d865487b78cfbba5d76848[m
+Author: DanielaBustamante <bustamantegd@outlook.com>
+Date:   Wed Oct 4 11:15:50 2023 -0600
+
+    2cambio04102023
+
+[33mcommit 12002d160c023666d783728f9ff1ec097392d07a[m
+Author: DanielaBustamante <bustamantegd@outlook.com>
+Date:   Wed Oct 4 09:00:12 2023 -0600
+
+    cambio04102023
+
+[33mcommit 295bd824835f2d5b0445d7f3c06cc7f7cfce8413[m
+Author: DanielaBustamante <bustamantegd@outlook.com>
+Date:   Tue Oct 3 11:41:03 2023 -0600
+
+    Cambio03102023
+
+[33mcommit c8e0c0a00f681887ebcd7db12af79839746e08a5[m
+Author: DanielaBustamante <bustamantegd@outlook.com>
+Date:   Mon Oct 2 16:56:38 2023 -0600
+
+    cambios02102023
+
+[33mcommit 549fcc4c937e9748d2d31815b3e45074a97fdce3[m
+Merge: 9f20673 b8ccbed
+Author: Daniela Bustamante Gomez <133843650+Daniipuff@users.noreply.github.com>
+Date:   Fri Sep 29 14:16:47 2023 -0600
+
+    Merge pull request #1 from MarthaMIMS/feature-button
+    
+    Agregue un boton
+
+[33mcommit b8ccbedc5dd222dd07094e4f80c4798d44229cdb[m
+Author: MarthaMIMS <marthameliton1903@gmail.com>
+Date:   Fri Sep 29 13:51:53 2023 -0600
+
+    Agregue un boton
+
+[33mcommit 9f2067371e9e0ff5ea075156d1758ef5338d8566[m
+Author: merunga <merunga@gmail.com>
+Date:   Mon Sep 25 10:33:26 2023 -0500
+
+    dataset images
+
+[33mcommit 1d1f3f67853fb430c6ad51efab3f46a4e4713d38[m
+Author: merunga <merunga@gmail.com>
+Date:   Sat Sep 23 15:27:51 2023 -0500
+
+    test 3 shared facts
+
+[33mcommit 9fc6e71b9195b12cc19e6bcd17eabb882b29eb9e[m
+Author: merunga <merunga@gmail.com>
+Date:   Sat Sep 23 15:27:33 2023 -0500
+
+    package-lock
+
+[33mcommit de53683f71d7c19447eb451050c131266bb8af89[m
+Author: ivy <unjust@gmail.com>
+Date:   Sat Sep 23 10:32:18 2023 -0500
+
+    chore(init): Adds project files from curriculum

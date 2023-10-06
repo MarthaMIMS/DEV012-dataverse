@@ -4,54 +4,52 @@ body {
   background-image: url("https://images3.alphacoders.com/591/591067.jpg");
   background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con 50% de transparencia */
   background-blend-mode: overlay;
-  background-size: cover; /* Hacer que la imagen cubra toda la pantalla */
-  background-position: center center; /* Centrar la imagen en la pantalla */
-  background-repeat: no-repeat; /* Evitar que la imagen se repita */
   margin: 0; /* Eliminar el margen del cuerpo del documento */
   padding: 0; /* Eliminar el relleno del cuerpo del documento */
 }
 header {
   font-size: medium;
   font-family: cursive;
-  color: #000000;
   padding: 20px;
-  
 }
-
-/* Estilo para etiquetas <label> con margen interno */
+main {
+  padding: 0; /* Espaciado interior del elemento <main> */
+  margin-left: 8%;
+  margin-right: 5%;
+  /* Otros estilos personalizados según tus preferencias */
+}
 label {
-  color: #000000; /* Color del texto */
+  color: #254805; /* Color del texto */
   font-family: Impact, fantasy; /* Tipo de fuente */
   font-size: x-large; /* Tamaño de fuente grande */
-
 }
 ul {  
   text-align: center;
   width: 60%;
-  margin-left: 10%;
-  margin-right: 5%;
-  
+  margin-left: 20%;
+  margin-right: 2%;
 }
 li {
   float: left;
   width: calc(30% - 10px); /* 10px de margen derecho (5px + 5px) se restan del 30% */
-  background-image: url("https://t4.ftcdn.net/jpg/04/95/59/73/360_F_495597323_mEqzSGcGvNv152vCVc7AYFAfCR29NmID.jpg");
-  background-color: rgb(255, 255, 255, 0.5);/* Fondo blanco con 50% de transparencia */
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("https://static.vecteezy.com/system/resources/previews/004/948/426/non_2x/cartoon-comic-cloud-copy-space-background-on-blue-free-vector.jpg");
+  /* La capa de fondo transparente se crea con linear-gradient */
   margin-right: 20px; /* Aumenta el margen derecho si lo deseas */
   margin-bottom: 20px;
   margin-top: 50px;
   border-radius: 20px;
-  border: 5px solid #0056b1;
+  border: 5px solid #014b9b;
   font-family: Impact, fantasy;
-  font-size: x-large; /* Tamaño de fuente grande */
+  font-size:larger; /* Tamaño de fuente grande */
+  list-style-type: none; /* Elimina la viñeta de los elementos li */
 }
-
-li dt, dd {
+li dt, dd { 
   /* Estilos para los elementos <a> dentro de <li> */
-  color: #333; /* Cambia el color del texto a rojo, por ejemplo */
+  color: #02003a; /* Cambia el color del texto a rojo, por ejemplo */
   text-decoration: none; 
+  text-align:initial; 
+  
 }
-
 .contenedor1, h2 {
   background-color: #4a9f2d; /* Color de fondo */
   border: 5px solid #347e19d3; /* Borde */
@@ -63,17 +61,13 @@ li dt, dd {
   font-size:larger; /* Tamaño de fuente */
   font-family: Arial, Helvetica, sans-serif;
   appearance: none; /* Oculta el estilo nativo del cuadro de selección */
-
 }
-
 .contenedor1 select {
-  appearance: none; /* Oculta el estilo nativo del cuadro de selección */
   padding: 5px;
   border: 3px solid #227000;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: #e2f3d5;
 }
-
 /* Estilo para las opciones personalizadas */
 .contenedor1 select option {
   padding: 5px;
@@ -82,9 +76,7 @@ li dt, dd {
   border-radius: 5px;
   font-size:larger; /* Tamaño de fuente */
   font-family: Arial, Helvetica, sans-serif;
-
 }
-
 /* Estilo para la lista desplegable personalizada */
 .contenedor1::after {
   content: ''; /* No hay contenido por defecto */
@@ -93,11 +85,9 @@ li dt, dd {
   right: 10px;
   margin-top: -5px; /* Alinea verticalmente el símbolo */
   border-width: 5px;
-  border-style: solid;
-  border-color: #333 transparent transparent transparent; /* Flecha hacia abajo */
+  border-style: solid;  
   pointer-events: none;
 }
-
 #limpiar {
   background-color: rgb(34, 77, 0);
   color: rgb(255, 255, 255);
@@ -121,4 +111,13 @@ li dt, dd {
   padding: 20px; /* Agrega un espacio alrededor del contenido */
   max-width: 1200px; /* Ajusta el valor según tus necesidades */
   margin: 0 auto; /* Centra horizontalmente */  
+}
+footer {
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #7b3d87; /* Color de fondo del footer */
+  color: #fff; /* Color de texto del footer */
+  padding: 0; /* Espaciado interior del footer */
+  text-align: center; /* Alineación del texto en el centro */
 }
