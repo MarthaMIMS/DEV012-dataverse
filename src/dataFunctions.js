@@ -8,5 +8,3 @@ export const example = () => {
 export const anotherExample = () => {
   return [];
 };
-//const primerfiltro = document.getElementById('simpson');
- // primerfiltro
