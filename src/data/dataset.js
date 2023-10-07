@@ -1,6 +1,7 @@
 export default [
   {
-    "id": "simpson",
+    "id": "001",
+    "lastname": "simpson",
     "name": "Homero Simpson",
     "shortDescription": "Padre de familia y trabajador en la planta nuclear de Springfield.",
     "description": "Un hombre con una personalidad única y una vida llena de situaciones cómicas.",
@@ -13,7 +14,8 @@ export default [
     }
   },
   {
-    "id": "simpson",
+    "id": "002",
+    "lastname": "simpson",
     "name": "Marge Simpson",
     "shortDescription": "Madre y ama de casa, conocida por su distintivo cabello azul.",
     "description": "Una mujer con un corazón generoso y una paciencia interminable, casada con Homer Simpson y madre de tres hijos.",
@@ -26,8 +28,9 @@ export default [
     }
   },
   {
-    "id": "simpson",
-    "name": "Simpson",
+    "id": "003",
+    "lastname": "simpson",
+    "name": "lisa Simpson",
     "roll":"Estudiante de primaria",
     "shortDescription": "Inteligente y comprometida, miembro de la familia Simpson.",
     "description": "Lisa es la hija mediana de la familia Simpson. Aunque a menudo es la voz de la razón en su hogar, también es una talentosa músico y defensora de los derechos sociales.",
@@ -40,7 +43,8 @@ export default [
     }
   },
   {
-    "id": "simpson",
+    "id": "004",
+    "lastname": "simpson",
     "name": "Bart Simpson",
     "shortDescription": "Travieso y bromista, el hijo mayor de la familia Simpson.",
     "description": "Bart es conocido por sus travesuras y bromas en la escuela de Springfield. Aunque puede ser un estudiante rebelde, tiene un gran corazón y un sentido único del humor.",
@@ -53,7 +57,8 @@ export default [
     }
   },
   {
-    "id": "simpson",
+    "id": "005",
+    "lastname": "simpson",
     "name": "Maggie Simpson",
     "shortDescription": "La más joven de la familia Simpson, conocida por su chupete.",
     "description": "Aunque Maggie es la más pequeña de la familia, a menudo sorprende a todos con su ingenio y destreza. Su chupete es su inseparable compañero y a menudo la clave de sus pequeñas aventuras.",
@@ -66,7 +71,8 @@ export default [
     }
   },
   {
-    "id": "simpson",
+    "id": "006",
+    "lastname": "simpson",
     "name": "Abraham Simpson",
     "shortDescription": "El patriarca anciano de la familia Simpson.",
     "description": "Abuelo Simpson es el padre de Homer Simpson y abuelo de Bart, Lisa, y Maggie. A pesar de su edad avanzada, tiene una rica historia y a menudo comparte historias y sabiduría con la familia. Sus travesuras y comentarios son una parte divertida de la dinámica familiar.",
@@ -79,7 +85,8 @@ export default [
     }
   },
   {
-    "id": "flanders",
+    "id": "007",
+    "lastname": "flanders",
     "name": "Ned Flanders",
     "shortDescription": "Amable vecino y amigo de la familia Simpson.",
     "description": "Ned Flanders es conocido en Springfield por su extrema amabilidad y su devoción religiosa. Es el vecino de al lado de la familia Simpson y un amigo cercano de Homer Simpson, a pesar de sus diferencias en personalidad y estilo de vida.",
@@ -92,7 +99,8 @@ export default [
     }
   },
   {
-    "id": "flanders",
+    "id": "008",
+    "lastname": "flanders",
     "name": "Maude Flanders",
     "shortDescription": "Vecina y amiga de la familia Simpson.",
     "description": "Maude Flanders era una vecina amable y piadosa de la familia Simpson en Springfield. Era conocida por su devoción religiosa y su actitud amable hacia los demás.",

@@ -1,7 +1,7 @@
-import { example } from './dataFunctions.js';
+import { filterData} from './dataFunctions.js';
 import { renderItems } from './view.js';
 import data from './data/dataset.js';
-console.log(example, renderItems(data), data);
+console.log(filterData, renderItems(data), data);
 const boton = document.getElementById('limpiar');
 const limpiofiltro1 = document.getElementById('select-filter');
 const limpiofiltro2 = document.getElementById('select-sort');
@@ -14,8 +14,8 @@ filtronombre.addEventListener("change", function (event) {
     const Valorseleccionado = event.target.value;
     if (Valorseleccionado === 'simpsons') {
         /*console.log('Hiciste clic en Simpsons');*/
-        //const apellidosimpson=filterby();
-       // const apellidosimpson = filterby.filtro(Valorseleccionado);
+        const apellidosimpson=filterData(data, 'simpson', 'lastname');
+       apellidosimpson.innerHTML = apellidosimpson;
  // filtronombre.innerHTML = filterby();//"Familia:" + apellidosimpson;
     }
     if (Valorseleccionado === 'flanders') {

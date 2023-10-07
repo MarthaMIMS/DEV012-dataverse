@@ -1,12 +1,11 @@
 // Estas funciones son ejemplos, aquí puedes desarrollar tus propias funciones.
-export const example = () => {
- // return 'example';
- function filterData (data, filterBy, value){
-
- }
-};
-export const anotherExample = () => {
-  return [];
-};
-//const primerfiltro = document.getElementById('simpson');
- // primerfiltro
+export function filterData(data, filterBy, value) {
+    let familiasimpson = data.filter(filtro1 => filtro1.lastname === "simpson");
+  console.log(familiasimpson);
+    return familiasimpson;
+   
+  };
+  export const anotherExample = () => {
+    return [];
+  };
+  
