@@ -12,21 +12,26 @@ limpiofiltro2.selectedIndex = 0;
 const filtronombre = document.querySelector('select[data-testid="select-filter" ]');
 filtronombre.addEventListener("change", function (event) {
     const Valorseleccionado = event.target.value;
+<<<<<<< HEAD
     if (Valorseleccionado === 'simpsons') {
         /*console.log('Hiciste clic en Simpsons');*/
         const apellidosimpson=filterData(data, 'simpson', 'lastname');
        apellidosimpson.innerHTML = apellidosimpson;
  // filtronombre.innerHTML = filterby();//"Familia:" + apellidosimpson;
+=======
+    let familiasimpson = filterData(data,Valorseleccionado,''); //renderizar
+    renderItems(familiasimpson);
+});
+
+const ascdesc = document.querySelector('select[data-testid="select-sort"]');
+ascdesc.addEventListener("change", function (event2) {
+    const abecetario = event2.target.value;
+    console.log(abecetario);
+    if (abecetario === 'asc') {
+        console.log('Hiciste clic en asc')
+>>>>>>> d311f3b997a4a7a17ccc450527561aba3246dead
     }
-    if (Valorseleccionado === 'flanders') {
-        console.log('Hiciste clic en flanders');
-    }if (Valorseleccionado === 'bouvier') {
-        console.log('Hiciste clic en bouvier');
-    }
-    if (Valorseleccionado === 'wiggum') {
-        console.log('Hiciste clic en wiggum');
-    }
-    if (Valorseleccionado === 'amistades') {
-        console.log('Hiciste clic en amistades');
+    if (abecetario === 'desc') {
+        console.log('Hiciste clic en desc')
     }
 });
