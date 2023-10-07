@@ -2,10 +2,10 @@ export const renderItems = (data) => {
   console.log(data)
   // Aquí comienza tu código y puedes retornar lo que tu necesites
   const person1 = document.getElementById('root');
+  person1.innerHTML = '';
   const ul = document.createElement('ul');//creamos el ul fuera del for para que se cree una sola vez
   data.forEach(item => {
     const lista = document.createElement('li');//creamos el li
-    // lista.innerHTML = lista.innerHTML;//el li lo queremos como un elemento padre
     ul.appendChild(lista); //en mi ul, se muestran los li
     person1.appendChild(ul)//en el div con id=root, se muestra el ul, dentro de el ul ya tenemos los li
     const nombres = document.createElement('dl');
