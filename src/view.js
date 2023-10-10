@@ -6,6 +6,8 @@ export const renderItems = (data) => {
   const ul = document.createElement('ul');//creamos el ul fuera del for para que se cree una sola vez
   data.forEach(item => {
     const lista = document.createElement('li');//creamos el li
+    lista.setAttribute('itemscope','');
+    lista.setAttribute('itemprop',item.id);
     ul.appendChild(lista); //en mi ul, se muestran los li
     person1.appendChild(ul)//en el div con id=root, se muestra el ul, dentro de el ul ya tenemos los li
     const nombres = document.createElement('dl');

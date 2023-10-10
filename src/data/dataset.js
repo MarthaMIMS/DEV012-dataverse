@@ -310,7 +310,7 @@ export default [
   },
   {
     "id":"023",
-    "id": "bouvier",
+    "lastname": "bouvier",
     "name": "Patty y Selma Bouvier",
     "shortDescription": "Hermanas de Marge Simpson y empleadas del Departamento de Policía de Springfield.",
     "description": "Patty y Selma son personajes de la serie de televisión 'Los Simpson'...",
@@ -323,7 +323,8 @@ export default [
     }
   },
   {
-    "id": "wiggum",
+    "id": "024",
+    "lastname": "wiggum",
     "name": "Clancy Wiggum",
     "shortDescription": "Jefe de Policía de Springfield y padre de Ralph Wiggum.",
     "description": "Clancy Wiggum es un personaje de la serie de televisión 'Los Simpson'...",

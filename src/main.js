@@ -6,24 +6,27 @@ const boton = document.getElementById('limpiar');
 const limpiofiltro1 = document.getElementById('select-filter');
 const limpiofiltro2 = document.getElementById('select-sort');
 boton.addEventListener('click', function () {
-limpiofiltro1.selectedIndex = 0;
-limpiofiltro2.selectedIndex = 0;
+    limpiofiltro1.selectedIndex = 0;
+    limpiofiltro2.selectedIndex = 0;
+    renderItems(data);
 });
-const filtronombre = document.querySelector('select[data-testid="select-filter" ]');
+    const filtronombre = document.querySelector('select[data-testid="select-filter" ]');
 filtronombre.addEventListener("change", function (event) {
     const Valorseleccionado = event.target.value;
-    let familiasimpson = filterData(data,Valorseleccionado,''); //renderizar
-    renderItems(familiasimpson);
+  const familiasimpson = filterData(data,Valorseleccionado,''); //renderizar
+  renderItems(familiasimpson);
 });
 
 const ascdesc = document.querySelector('select[data-testid="select-sort"]');
 ascdesc.addEventListener("change", function (event2) {
-    const abecetario = event2.target.value;
-    console.log(abecetario);
-    if (abecetario === 'asc') {
-        console.log('Hiciste clic en asc')
-    }
-    if (abecetario === 'desc') {
-        console.log('Hiciste clic en desc')
-    }
+ const abecetario = event2.target.value;
+
+ const datosOrdenadosAsc = filterSort(datos, "name", "asc");
+renderItems(datosOrdenadosAsc);
+
+const datosOrdenadosDesc = filterSort(datos, "name", "desc");
+renderItems(datosOrdenadosDesc);
+
+
+            
 });
