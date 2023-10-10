@@ -1,11 +1,7 @@
 export default [
   {
     "id": "001",
-<<<<<<< HEAD
-    "lastname": "simpson",
-=======
     "lastname":"simpson",
->>>>>>> d311f3b997a4a7a17ccc450527561aba3246dead
     "name": "Homero Simpson",
     "shortDescription": "Padre de familia y trabajador en la planta nuclear de Springfield.",
     "description": "Un hombre con una personalidad única y una vida llena de situaciones cómicas.",
@@ -19,11 +15,7 @@ export default [
   },
   {
     "id": "002",
-<<<<<<< HEAD
-    "lastname": "simpson",
-=======
     "lastname":"simpson",
->>>>>>> d311f3b997a4a7a17ccc450527561aba3246dead
     "name": "Marge Simpson",
     "shortDescription": "Madre y ama de casa, conocida por su distintivo cabello azul.",
     "description": "Una mujer con un corazón generoso y una paciencia interminable, casada con Homer Simpson y madre de tres hijos.",
@@ -37,13 +29,8 @@ export default [
   },
   {
     "id": "003",
-<<<<<<< HEAD
-    "lastname": "simpson",
-    "name": "lisa Simpson",
-=======
     "name": "Lisa Simpson",
     "lastname":"simpson",
->>>>>>> d311f3b997a4a7a17ccc450527561aba3246dead
     "roll":"Estudiante de primaria",
     "shortDescription": "Inteligente y comprometida, miembro de la familia Simpson.",
     "description": "Lisa es la hija mediana de la familia Simpson. Aunque a menudo es la voz de la razón en su hogar, también es una talentosa músico y defensora de los derechos sociales.",
@@ -56,11 +43,7 @@ export default [
     }
   },
   {
-<<<<<<< HEAD
-    "id": "004",
-=======
     "id":"004",
->>>>>>> d311f3b997a4a7a17ccc450527561aba3246dead
     "lastname": "simpson",
     "name": "Bart Simpson",
     "shortDescription": "Travieso y bromista, el hijo mayor de la familia Simpson.",
@@ -74,11 +57,7 @@ export default [
     }
   },
   {
-<<<<<<< HEAD
-    "id": "005",
-=======
     "id":"005",
->>>>>>> d311f3b997a4a7a17ccc450527561aba3246dead
     "lastname": "simpson",
     "name": "Maggie Simpson",
     "shortDescription": "La más joven de la familia Simpson, conocida por su chupete.",
@@ -92,11 +71,7 @@ export default [
     }
   },
   {
-<<<<<<< HEAD
-    "id": "006",
-=======
     "id":"006",
->>>>>>> d311f3b997a4a7a17ccc450527561aba3246dead
     "lastname": "simpson",
     "name": "Abraham Simpson",
     "shortDescription": "El patriarca anciano de la familia Simpson.",
@@ -110,11 +85,7 @@ export default [
     }
   },
   {
-<<<<<<< HEAD
-    "id": "007",
-=======
     "id":"007",
->>>>>>> d311f3b997a4a7a17ccc450527561aba3246dead
     "lastname": "flanders",
     "name": "Ned Flanders",
     "shortDescription": "Amable vecino y amigo de la familia Simpson.",
@@ -128,11 +99,7 @@ export default [
     }
   },
   {
-<<<<<<< HEAD
-    "id": "008",
-=======
     "id":"008",
->>>>>>> d311f3b997a4a7a17ccc450527561aba3246dead
     "lastname": "flanders",
     "name": "Maude Flanders",
     "shortDescription": "Vecina y amiga de la familia Simpson.",
@@ -203,7 +170,7 @@ export default [
   },
   {
     "id":"013",
-    "lastname": "asmitades",
+    "lastname": "amistades",
     "name": "Barney Gumble",
     "shortDescription": "Amigo de Homer Simpson, conocido por su amor por la cerveza.",
     "description": "Barney Gumble es un amigo cercano de Homer Simpson en Springfield. Es conocido por su afición a la cerveza y su comportamiento a menudo descuidado debido a su embriaguez crónica.",
@@ -343,7 +310,7 @@ export default [
   },
   {
     "id":"023",
-    "id": "bouvier",
+    "lastname": "bouvier",
     "name": "Patty y Selma Bouvier",
     "shortDescription": "Hermanas de Marge Simpson y empleadas del Departamento de Policía de Springfield.",
     "description": "Patty y Selma son personajes de la serie de televisión 'Los Simpson'...",
@@ -356,8 +323,9 @@ export default [
     }
   },
   {
-    "id": "wiggum",
+    "id": "024",
     "name": "Clancy Wiggum",
+    "lastname": "wiggum",
     "shortDescription": "Jefe de Policía de Springfield y padre de Ralph Wiggum.",
     "description": "Clancy Wiggum es un personaje de la serie de televisión 'Los Simpson'...",
     "imageUrl": "https://www.animationconnection.com/assets/artwork/1656099886-973-5909-chief-wiggum-original-cel.jpg",

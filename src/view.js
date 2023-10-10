@@ -2,8 +2,13 @@ export const renderItems = (data) => {
   console.log(data)
   // Aquí comienza tu código y puedes retornar lo que tu necesites
   const person1 = document.getElementById('root');
+
   person1.innerHTML = '';
+  const footer = document.createElement('footer');
+  footer.innerHTML = 'Autoras: Martha Melitón & Daniela Bustamante';
+  document.body.appendChild(footer);
   const ul = document.createElement('ul');//creamos el ul fuera del for para que se cree una sola vez
+
   data.forEach(item => {
     const lista = document.createElement('li');//creamos el li
     ul.appendChild(lista); //en mi ul, se muestran los li
@@ -32,9 +37,7 @@ export const renderItems = (data) => {
     dd2.setAttribute('itemprop', "edad");
     dd2.innerHTML = item.edad;
     nombres.appendChild(dd2);
-    const footer = document.createElement('footer');
-    footer.innerHTML = 'Autoras: Martha Melitón & Daniela Bustamante';
-    document.body.appendChild(footer);
+
   });
   return 'example';
 };

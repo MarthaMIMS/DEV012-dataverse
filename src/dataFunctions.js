@@ -1,19 +1,24 @@
-<<<<<<< HEAD
-// Estas funciones son ejemplos, aquí puedes desarrollar tus propias funciones.
 export function filterData(data, filterBy, value) {
-    let familiasimpson = data.filter(filtro1 => filtro1.lastname === "simpson");
-  console.log(familiasimpson);
-    return familiasimpson;
-   
-  };
-  export const anotherExample = () => {
-    return [];
-  };
-  
-=======
-export function filterData(data, filterBy, value) {
-  let familiasimpson = data.filter(filtro1 => filtro1.lastname === filterBy);
+  const familiasimpson = data.filter(filtro1 => filtro1.lastname === filterBy);
   return familiasimpson;
- 
+
 };
->>>>>>> d311f3b997a4a7a17ccc450527561aba3246dead
+export function sortData(data, sortBy, sortOrder) {
+  sortBy = data.map(function (datos){
+  return datos.name;
+  
+});
+const sortnombres = sortBy.sort();//(function (primero,segundo){
+//if (primero.name> segundo.name){
+//return 1
+//}
+//else{
+///return -1
+//}
+console.log(sortnombres);
+};//);
+
+//const orden=data.sort(filtro2 => filtro2.name===sortBy);
+
+//return orden;
+//};
