@@ -2,15 +2,24 @@ export const renderItems = (data) => {
   console.log(data)
   // Aquí comienza tu código y puedes retornar lo que tu necesites
   const person1 = document.getElementById('root');
+<<<<<<< HEAD
 
   person1.innerHTML = '';
   const footer = document.createElement('footer');
   footer.innerHTML = 'Autoras: Martha Melitón & Daniela Bustamante';
   document.body.appendChild(footer);
+=======
+  person1.innerHTML = '';
+>>>>>>> f32008d7a80f1282673d31d415b67057dd626d1a
   const ul = document.createElement('ul');//creamos el ul fuera del for para que se cree una sola vez
 
   data.forEach(item => {
     const lista = document.createElement('li');//creamos el li
+<<<<<<< HEAD
+=======
+    lista.setAttribute('itemscope','');
+    lista.setAttribute('itemprop',item.id);
+>>>>>>> f32008d7a80f1282673d31d415b67057dd626d1a
     ul.appendChild(lista); //en mi ul, se muestran los li
     person1.appendChild(ul)//en el div con id=root, se muestra el ul, dentro de el ul ya tenemos los li
     const nombres = document.createElement('dl');

@@ -170,7 +170,7 @@ export default [
   },
   {
     "id":"013",
-    "lastname": "amistades",
+    "lastname": "asmitades",
     "name": "Barney Gumble",
     "shortDescription": "Amigo de Homer Simpson, conocido por su amor por la cerveza.",
     "description": "Barney Gumble es un amigo cercano de Homer Simpson en Springfield. Es conocido por su afición a la cerveza y su comportamiento a menudo descuidado debido a su embriaguez crónica.",
@@ -324,6 +324,7 @@ export default [
   },
   {
     "id": "024",
+    "lastname": "wiggum",
     "name": "Clancy Wiggum",
     "lastname": "wiggum",
     "shortDescription": "Jefe de Policía de Springfield y padre de Ralph Wiggum.",
