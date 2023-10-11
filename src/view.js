@@ -8,10 +8,16 @@ export const renderItems = (data) => {
 
   data.forEach(item => {
     const lista = document.createElement('li');//creamos el li
+<<<<<<< HEAD
     lista.setAttribute('class','tarjetas');
     lista.setAttribute('itemscope','');
     lista.setAttribute('itemprop',item.id);
     
+=======
+    lista.setAttribute('class','listas')
+    lista.setAttribute('itemscope', '');
+    lista.setAttribute('itemprop', item.id);
+>>>>>>> 23b23b898b8f4a61d26a66d4e064012c3adeaeb8
     ul.appendChild(lista); //en mi ul, se muestran los li
     person1.appendChild(ul)//en el div con id=root, se muestra el ul, dentro de el ul ya tenemos los li
     const nombres = document.createElement('dl');
