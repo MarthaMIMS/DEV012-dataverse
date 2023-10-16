@@ -1,23 +1,22 @@
 export const renderItems = (data) => {
-  console.log(data)
+
   // Aquí comienza tu código y puedes retornar lo que tu necesites
   
   const person1 = document.getElementById('root');
   person1.innerHTML = '';
   const ul = document.createElement('ul');//creamos el ul fuera del for para que se cree una sola vez
-
+  console.log(data)
   data.forEach(item => {
     const lista = document.createElement('li');//creamos el li
-<<<<<<< HEAD
     lista.setAttribute('class','tarjetas');
     lista.setAttribute('itemscope','');
     lista.setAttribute('itemprop',item.id);
+
+    /*const estadisticas=document.createElement('div');
+    estadisticas.id='estadisticas-edad';
+    estadisticas.innerHTML=item.edad;
+    lista.appendChild(estadisticas);*/
     
-=======
-    lista.setAttribute('class','listas')
-    lista.setAttribute('itemscope', '');
-    lista.setAttribute('itemprop', item.id);
->>>>>>> 23b23b898b8f4a61d26a66d4e064012c3adeaeb8
     ul.appendChild(lista); //en mi ul, se muestran los li
     person1.appendChild(ul)//en el div con id=root, se muestra el ul, dentro de el ul ya tenemos los li
     const nombres = document.createElement('dl');
@@ -44,7 +43,6 @@ export const renderItems = (data) => {
     dd2.setAttribute('itemprop', "edad");
     dd2.innerHTML = item.edad;
     nombres.appendChild(dd2);
-   
   });
   const footer = document.createElement('footer');
   footer.innerHTML = 'Autoras: Martha Melitón & Daniela Bustamante';
