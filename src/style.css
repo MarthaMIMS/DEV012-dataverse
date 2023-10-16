@@ -1,193 +1,209 @@
-@media (min-width: 601px) {
-  body {
-    font-family: cursive;
-    text-align: center;
-    background-image: url("https://images3.alphacoders.com/591/591067.jpg");
-    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con 50% de transparencia */
-    background-blend-mode: overlay;
-    margin: 0; /* Eliminar el margen del cuerpo del documento */
-    padding: 0; /* Eliminar el relleno del cuerpo del documento */
-  
-  }
-  header.titulo {
-    font-size: medium;
-    font-family: cursive;
-    padding: 20px;
-  }
-  main {
-    padding: 0; /* Espaciado interior del elemento <main> */
-    margin-left: 8%;
-    margin-right: 5%;
-    /* Otros estilos personalizados según tus preferencias */
-  }
-  label {
-    color: #254805; /* Color del texto */
-    font-family: Impact, fantasy; /* Tipo de fuente */
-    font-size: x-large; /* Tamaño de fuente grande */
-  }
-  ul {
-    text-align: center;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 2%;
-  
-    justify-content: space-between;
-  }
-  li {
-    float: left;
-    width: calc(30% - 10px); /* 10px de margen derecho (5px + 5px) se restan del 30% */
-    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("https://static.vecteezy.com/system/resources/previews/004/948/426/non_2x/cartoon-comic-cloud-copy-space-background-on-blue-free-vector.jpg");
-    /* La capa de fondo transparente se crea con linear-gradient */
-    margin-right: 20px; /* Aumenta el margen derecho si lo deseas */
-    margin-bottom: 20px;
-    margin-top: 50px;
-    border-radius: 20px;
-    border: 5px solid #014B9B;
-    font-family: Impact, fantasy;
-    font-size:larger; /* Tamaño de fuente grande */
-    list-style-type: none; /* Elimina la viñeta de los elementos li */
-    display: flex;
-    justify-content: space-between;
-  }
-  li dt, dd {
-    /* Estilos para los elementos <a> dentro de <li> */
-    color: #02003A; /* Cambia el color del texto a rojo, por ejemplo */
-    text-decoration: none;
-    text-align:initial;
-  }
-  .contenedor1, h2 {
-    background-color: #4A9F2D; /* Color de fondo */
-    border: 5px solid #347e19d3; /* Borde */
-    padding: 5px; /* Espaciado interno */
-    margin: 20px; /* Margen externo */
-    border-radius: 30px; /* Bordes redondeados */
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra */
-    color: #FFFFFF; /* Color del texto */
-    font-size:larger; /* Tamaño de fuente */
-    font-family: Arial, Helvetica, sans-serif;
-    appearance: none; /* Oculta el estilo nativo del cuadro de selección */
-  }
-  .contenedor1 select {
-    padding: 5px;
-    border: 3px solid #227000;
-    border-radius: 5px;
-    background-color: #E2F3D5;
-  }
-  /* Estilo para las opciones personalizadas */
-  .contenedor1 select option {
-    padding: 5px;
-    background-color: #fff;
-    color: #333;
-    border-radius: 5px;
-    font-size:larger; /* Tamaño de fuente */
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  /* Estilo para la lista desplegable personalizada */
-  .contenedor1::after {
-    content: ''; /* No hay contenido por defecto */
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    margin-top: -5px; /* Alinea verticalmente el símbolo */
-    border-width: 5px;
-    border-style: solid;
-    pointer-events: none;
-  }
-  #limpiar, #datos {
-    background-color: rgb(34, 77, 0);
-    color: rgb(255, 255, 255);
-    /* Cambia el color del texto a blanco */
-    font-weight: bold;
-    border: none;
-    /* Quita el borde predeterminado */
-    border-radius: 10px;
-    /* Añade esquinas redondeadas */
-    padding: 5px 10px;
-    /* Añade espacio alrededor del texto */
-    font-size: 20px;
-    /* Cambia el tamaño del texto */
-    cursor: pointer;
-    /* Cambia el cursor al pasar el ratón sobre el botón */
-    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
-    /* Añade una sombra */
-  }
-  .contenedor2 {
-    text-align: center; /* Centra el contenido horizontalmente */
-    padding: 20px; /* Agrega un espacio alrededor del contenido */
-    max-width: 1200px; /* Ajusta el valor según tus necesidades */
-    margin: 0 auto; /* Centra horizontalmente */
-  }
-  footer {
-    position:fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #7B3D87; /* Color de fondo del footer */
-    color: #fff; /* Color de texto del footer */
-    padding: 0; /* Espaciado interior del footer */
-    text-align: center; /* Alineación del texto en el centro */
-  }
-  .mostrar,
-  .ocultar{
-    font-size: 30px;
-    cursor: pointer;
-    display: none;
+  @media (min-width: 601px) {
+    body {
+      font-family: cursive;
+      text-align: center;
+      background-image: url("https://images3.alphacoders.com/591/591067.jpg");
+      background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con 50% de transparencia */
+      background-blend-mode: overlay;
+      margin: 0; /* Eliminar el margen del cuerpo del documento */
+      padding: 0; /* Eliminar el relleno del cuerpo del documento */
+    
+    }
+    header {
+      font-size: medium;
+      font-family: cursive;
+      padding: 20px;
+    }
+    main {
+      padding: 0; /* Espaciado interior del elemento <main> */
+      margin-left: 8%;
+      margin-right: 5%;
+      /* Otros estilos personalizados según tus preferencias */
+    }
+    label {
+      color: #254805; /* Color del texto */
+      font-family: Impact, fantasy; /* Tipo de fuente */
+      font-size: x-large; /* Tamaño de fuente grande */
+    }
+    ul {
+      text-align: center;
+      width: 60%;
+      margin-left: 20%;
+      margin-right: 2%;
+    }
+    li {
+      float: left;
+      width: calc(30% - 10px); /* 10px de margen derecho (5px + 5px) se restan del 30% */
+      background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("https://static.vecteezy.com/system/resources/previews/004/948/426/non_2x/cartoon-comic-cloud-copy-space-background-on-blue-free-vector.jpg");
+      /* La capa de fondo transparente se crea con linear-gradient */
+      margin-right: 20px; /* Aumenta el margen derecho si lo deseas */
+      margin-bottom: 20px;
+      margin-top: 50px;
+      border-radius: 20px;
+      border: 5px solid #014B9B;
+      font-family: Impact, fantasy;
+      font-size:larger; /* Tamaño de fuente grande */
+      list-style-type: none; /* Elimina la viñeta de los elementos li */
+      
+    }
+    li dt, dd {
+      /* Estilos para los elementos <a> dentro de <li> */
+      color: #02003A; /* Cambia el color del texto a rojo, por ejemplo */
+      text-decoration: none;
+      text-align:initial;
+    }
+    .contenedor1, h2 {
+      background-color: #4A9F2D; /* Color de fondo */
+      border: 5px solid #347e19d3; /* Borde */
+      padding: 5px; /* Espaciado interno */
+      margin: 20px; /* Margen externo */
+      border-radius: 30px; /* Bordes redondeados */
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+      color: #FFFFFF; /* Color del texto */
+      font-size:larger; /* Tamaño de fuente */
+      font-family: Arial, Helvetica, sans-serif;
+      appearance: none; /* Oculta el estilo nativo del cuadro de selección */
+    }
+    .contenedor1 select {
+      padding: 5px;
+      border: 3px solid #227000;
+      border-radius: 5px;
+      background-color: #E2F3D5;
+    }
+    /* Estilo para las opciones personalizadas */
+    .contenedor1 select option {
+      padding: 5px;
+      background-color: #fff;
+      color: #333;
+      border-radius: 5px;
+      font-size:larger; /* Tamaño de fuente */
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    /* Estilo para la lista desplegable personalizada */
+    .contenedor1::after {
+      content: ''; /* No hay contenido por defecto */
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      margin-top: -5px; /* Alinea verticalmente el símbolo */
+      border-width: 5px;
+      border-style: solid;
+      pointer-events: none;
+    }
+    #limpiar, #facts {
+      background-color: rgb(34, 77, 0);
+      color: rgb(255, 255, 255);
+      /* Cambia el color del texto a blanco */
+      font-weight: bold;
+      border: none;
+      /* Quita el borde predeterminado */
+      border-radius: 10px;
+      /* Añade esquinas redondeadas */
+      padding: 5px 10px;
+      /* Añade espacio alrededor del texto */
+      font-size: 20px;
+      /* Cambia el tamaño del texto */
+      cursor: pointer;
+      /* Cambia el cursor al pasar el ratón sobre el botón */
+      box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
+      /* Añade una sombra */
+    }
 
-  }
-  .contenedor1{
-    order:1;
-  }
-  #check{
-    display: none;
-  }
-  #estadisticas-edad{
-    display: none;
-  }
-  }
-@media (max-width: 600px){
-  body {
-    font-family: cursive;
-    text-align: center;
-    background-image: url("https://images3.alphacoders.com/591/591067.jpg");
-    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con 50% de transparencia */
-    background-blend-mode: overlay;
-    margin: 0; /* Eliminar el margen del cuerpo del documento */
-    padding: 0; /* Eliminar el relleno del cuerpo del documento */
-  
-  }
-  .mostrar,
-  .ocultar{
-    display: block;
-  }
-  .mostrar {
-    position: fixed; 
-    top: 10px;
-    right: 10px; 
-    font-size: 50px; 
-    cursor: pointer; 
-  }
-  .contenedor1{
-    position:fixed;
-    width: 100%;
-    height: 100vh;
-    background: #227000;
-    right: -100%;
-    top: 0;
-    text-align: center;
-    padding: 100px 0px;
-    z-index: 100;
-    transition: 0.8s;
-  }
-  .contenedor1 label{
-    display: block;
-    padding: 20px;
-  }
-  .ocultar{
-    position: absolute;
-    top: 40px;
-    right: 40px;
-  }
-  #check:checked ~ .contenedor1{
-    right: 0;
-  }
-  
-}
+    .contenedor2 {
+      text-align: center; /* Centra el contenido horizontalmente */
+      padding: 20px; /* Agrega un espacio alrededor del contenido */
+      max-width: 1200px; /* Ajusta el valor según tus necesidades */
+      margin: 0 auto; /* Centra horizontalmente */
+    }
+    footer {
+      position:fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #7B3D87; /* Color de fondo del footer */
+      color: #fff; /* Color de texto del footer */
+      padding: 0; /* Espaciado interior del footer */
+      text-align: center; /* Alineación del texto en el centro */
+    }
+    .mostrar,
+    .ocultar{
+      font-size: 30px;
+      cursor: pointer;
+      display: none;
+    }
+    .contenedor1{
+      order: 1;
+    }
+    #check{
+      display: none;
+    }
+    }
+    @media (max-width: 600px){
+      body {
+        font-family: cursive;
+        text-align: center;
+        background-image: url("https://images3.alphacoders.com/591/591067.jpg");
+        background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con 50% de transparencia */
+        background-blend-mode: overlay;
+        margin: 0; /* Eliminar el margen del cuerpo del documento */
+        padding: 0; /* Eliminar el relleno del cuerpo del documento */
+      }
+      .mostrar,
+      .ocultar{
+        display: block;
+      }
+      .mostrar {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        font-size: 50px;
+        cursor: pointer;
+      }
+      .contenedor1{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background: #227000;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+        font-size:larger; /* Tamaño de fuente */
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .contenedor1 label{
+        display: block;
+        padding: 20px;
+      }
+      .ocultar{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+      }
+      #check:checked ~ .contenedor1{
+        right: 0;
+      }
+      main {
+        padding: 10px; /* Agregamos un espacio interno para separar el contenido de los bordes */
+        border-radius: 20px; /* Agregamos bordes redondeados */
+        background-color: #5959d2; /* Establecemos un color de fondo */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agregamos una sombra suave */
+        font-family: 'Bungee', cursive;
+      }
+      #check {
+        visibility: hidden;
+      }
+      #facts {
+        background-color: rgb(34, 77, 0);
+        color: rgb(255, 255, 255);/* Cambia el color del texto a blanco */
+        font-weight: bold;
+        border: none;/* Quita el borde predeterminado */
+        border-radius: 10px;/* Añade esquinas redondeadas */
+        padding: 5px 10px;/* Añade espacio alrededor del texto */
+        font-size: 20px;/* Cambia el tamaño del texto */
+        cursor: pointer;/* Cambia el cursor al pasar el ratón sobre el botón */
+        box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);/* Añade una sombra */
+        
+      }
+    }
