@@ -11,16 +11,14 @@
     <h1><img src="https://upload.wikimedia.org/wikipedia/commons/9/98/The_Simpsons_yellow_logo.svg" width="280"
         height="180" /><img src="https://assets.stickpng.com/thumbs/5a0c40db5a997e1c2cea1171.png" width="260"
         height="210" /></h1>
-  </header>
+      </header>
   <main>
     <h2>Descubre datos sorprendentes de tus personajes favoritos... ¡No te los pierdas!</h2>
+    <input type="checkbox" id="check">
+    <label for="check" class="mostrar">&#8801</label>
     <div class="contenedor1">
       <p>
-<<<<<<< HEAD
-        <label class="filtro-label" for="select-filter">Filter By:
-=======
         <label for="select-filter">Filter By:</label>
->>>>>>> 23b23b898b8f4a61d26a66d4e064012c3adeaeb8
         <select id="select-filter" data-testid="select-filter" name="familia">
           <option value="">...</option>
           <option value="simpson">Simpsons</option>
@@ -28,7 +26,6 @@
           <option value="bouvier">Bouvier</option>
           <option value="wiggum">Wiggum</option>
           <option value="amistades">Amistades</option>
-
         </select>
         <label for="select-sort">Sort by name:</label>
         <select id="select-sort" data-testid="select-sort" name="alfabetico">
@@ -36,37 +33,13 @@
           <option value="asc">A - Z</option>
           <option value="desc">Z - A</option>
         </select>
+        <label for="check" class="ocultar">&#215</label>
         <button data-testid="button-clear" id="limpiar">Limpiar</button>
-
-
       </p>
     </div>
+     <div id="resultados"> <button id="facts">Facts</button></div>
   </main>
   <div clase="tarjetas" id="root">
   </div>
 </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
