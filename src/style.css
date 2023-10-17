@@ -171,7 +171,9 @@
         transition: 0.8s;
         font-size:larger; /* Tamaño de fuente */
         font-family: Arial, Helvetica, sans-serif;
+        
       }
+ 
       .contenedor1 label{
         display: block;
         padding: 20px;
