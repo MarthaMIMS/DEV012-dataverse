@@ -16,9 +16,6 @@ dataview.appendChild(datalist);
 const boton = document.querySelector('button[id="limpiar"]');
 const limpiofiltro1 = document.querySelector('select[data-testid="select-filter"]');
 const limpiofiltro2 = document.querySelector('select[data-testid="select-sort"]');
-const estadistica = document.getElementById('facts');
-
-
 
 boton.addEventListener('click', function (event) {
   limpiofiltro1.selectedIndex = event.target.value;
@@ -26,10 +23,7 @@ boton.addEventListener('click', function (event) {
   const datalist = renderItems(data);
   dataview.innerHTML = '';
   dataview.appendChild(datalist);
-  const parrafoResultado = document.getElementById('resultado-parrafo');
-  if (parrafoResultado) {
-    parrafoResultado.textContent = '';
-  }
+  parrafo_estadistica.innerHTML = "Facts";
 });
 
 
@@ -71,22 +65,11 @@ filtroClave.addEventListener("change", soloUnFiltro);//nuestra solo un filtro
 filtroOrden.addEventListener("change", soloUnFiltro);//nuestra solo un filtro
 
 
-estadistica.addEventListener('click', function () {//creamos el evento 
-  const factsEdad = computeStats(data); //llamamos a la función computeStats
-  const parrafoResultado = document.createElement('p');//creamos un parrafo
-  parrafoResultado.setAttribute('id', 'resultado-parrafo'); //creamos un id jiji
-  parrafoResultado.textContent = `Existen ${factsEdad.menoresDe30} personajes con edades por debajo de los 30 años. 
-  Existen ${factsEdad.mayoresDe30} personajes con edades por arriba de los 30 años.`;//informacion que contiene el parrafo
-  let resultadoDiv = document.getElementById('resultado-div');//creamos una variable para guardar informacion del DOM
-  if (!resultadoDiv) {//verificamos si el valor corresponde con la variable 
-    resultadoDiv = document.createElement('div');//creamos un elemento para que p no este solito
-    resultadoDiv.setAttribute('id', 'resultado-div');//con un id para identificarlo 
-    document.body.appendChild(resultadoDiv);//pegamos el elemento para que muestre el resultado
-  }
-
- 
-  resultadoDiv.appendChild(parrafoResultado);//va a mostrar el resultado en pantalla de la funcion 
+const parrafo_estadistica = document.getElementById('facts');
+parrafo_estadistica.addEventListener('click', function () {
+  const informacion_eades = computeStats(data);
+  parrafo_estadistica.innerHTML = "Sabias que: " + informacion_eades.menoresDe30 + " de estos personajes son menores de 30" + " y " + informacion_eades.mayoresDe30 + " de ellos son mayores de 30";
+  console.log(informacion_eades);
 });
-
 
 
