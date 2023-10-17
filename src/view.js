@@ -2,6 +2,7 @@ export const renderItems = (data) => {
 
   // Aquí comienza tu código y puedes retornar lo que tu necesites
   
+
   const ul = document.createElement('ul');//creamos el ul fuera del for para que se cree una sola vez
   data.forEach(item => {
     const lista = document.createElement('li');

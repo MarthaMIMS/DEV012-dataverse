@@ -19,17 +19,9 @@ export function sortData(data, sortBy, sortOrder) {
         return nameB.localeCompare(nameA);
       }
     });
-  
-      //return stats;
-    //, initialStats);
-  
-    
-  
-   // return ageStats;
-  //}
 
-  return sortedData;
-}
+    return sortedData;
+  }
 }
 
 export function computeStats(data) {//Funcion para calcular la estadística en el arreglo data
@@ -42,7 +34,7 @@ export function computeStats(data) {//Funcion para calcular la estadística en e
       return acumulador;//retorna el arreglo 
     },
     { menoresDe30: 0, mayoresDe30: 0 }//devuelve el objeto que contiene dos propiedades 
-  
+
   );
 
   const datosTransformados = data.map(personaje => ({
@@ -51,6 +43,6 @@ export function computeStats(data) {//Funcion para calcular la estadística en e
   }));
 
   return { ...estadistica, datosTransformados };//retorna las estadisticas de los datos transformados 
-};
+}
 
 
