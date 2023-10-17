@@ -1,8 +1,16 @@
 import { filterData } from './dataFunctions.js';
 import { renderItems } from './view.js';
 import { sortData } from './dataFunctions.js';
-//import { computeStats } from './dataFunctions.js';
+import { computeStats } from './dataFunctions.js';
 import data from './data/dataset.js';
+
+//const parrafo_estadistica = document.createElement('p');
+let parrafo_estadistica = document.getElementById('facts');
+parrafo_estadistica.addEventListener('click', function () {
+const informacion_eades=computeStats(data);
+parrafo_estadistica.innerHTML = "Sabias que: " + informacion_eades;
+console.log(informacion_eades);
+});
 
 const footer = document.createElement('footer');
 footer.innerHTML = 'Autoras: Martha Melitón & Daniela Bustamante';
@@ -19,6 +27,7 @@ const limpiofiltro2 = document.querySelector('select[data-testid="select-sort"]'
 boton.addEventListener('click', function (event) {
   limpiofiltro1.selectedIndex = event.target.value;
   limpiofiltro2.selectedIndex = event.target.value;
+  parrafo_estadistica.innerHTML=parrafo_estadistica;
   const datalist = renderItems(data);
   dataview.innerHTML='';
   dataview.appendChild(datalist);

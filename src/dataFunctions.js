@@ -50,7 +50,9 @@ export function computeStats(data) {//Funcion para calcular la estadística en e
     edadDoble: parseInt(personaje.edad) * 2,//Es para transformar los datos originales en un nuevo arreglo de datos con una propiedad adicional.
   }));
 
-  return { ...estadistica, datosTransformados };//retorna las estadisticas de los datos transformados 
+  const objeto= { ...estadistica, datosTransformados };//retorna las estadisticas de los datos transformados 
+  const cadenaJSON = JSON.stringify(objeto);
+  return cadenaJSON;
 };
 
 
