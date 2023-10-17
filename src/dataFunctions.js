@@ -18,13 +18,18 @@ export function sortData(data, sortBy, sortOrder) {
       } else if (sortOrder === "desc") {
         return nameB.localeCompare(nameA);
       }
-
-      // Si sortOrder no es "asc" ni "desc", no se aplica ordenamiento
-      return 0;
     });
-  }
+  
+      //return stats;
+    //, initialStats);
+  
+    
+  
+   // return ageStats;
+  //}
 
   return sortedData;
+}
 }
 
 export function computeStats(data) {//Funcion para calcular la estadística en el arreglo data
@@ -46,6 +51,6 @@ export function computeStats(data) {//Funcion para calcular la estadística en e
   }));
 
   return { ...estadistica, datosTransformados };//retorna las estadisticas de los datos transformados 
-}
+};
 
 

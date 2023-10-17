@@ -1,7 +1,8 @@
 export const renderItems = (data) => {
-  const ul = document.createElement('ul');
-  ul.setAttribute('data-testid', 'item-list'); // Agrega el atributo 'data-testid'
 
+  // Aquí comienza tu código y puedes retornar lo que tu necesites
+  
+  const ul = document.createElement('ul');//creamos el ul fuera del for para que se cree una sola vez
   data.forEach(item => {
     const lista = document.createElement('li');
     lista.setAttribute('class', 'listas');
