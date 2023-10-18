@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
   @media (min-width: 601px) {
     body {
-      font-family: cursive;
+      font-family: "Indie Flower" ;
       text-align: center;
       background-image: url("https://images3.alphacoders.com/591/591067.jpg");
       background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con 50% de transparencia */
@@ -11,19 +14,22 @@
     }
     header {
       font-size: medium;
-      font-family: cursive;
+      font-family: "Indie Flower" ;
+      
       padding: 20px;
     }
     main {
       padding: 0; /* Espaciado interior del elemento <main> */
       margin-left: 8%;
       margin-right: 5%;
+      font-size:large;
       /* Otros estilos personalizados según tus preferencias */
     }
     label {
       color: #254805; /* Color del texto */
-      font-family: Impact, fantasy; /* Tipo de fuente */
-      font-size: x-large; /* Tamaño de fuente grande */
+      font-family: "Indie Flower" ;
+      font-size: x-large; 
+      font-weight: 900;
     }
     ul {
       text-align: center;
@@ -41,14 +47,15 @@
       margin-top: 50px;
       border-radius: 20px;
       border: 5px solid #014B9B;
-      font-family: Impact, fantasy;
-      font-size:larger; /* Tamaño de fuente grande */
+      font-family: "Itim";
+      font-size:x-large;
+      font-weight: 700; /* Tamaño de fuente grande */
       list-style-type: none; /* Elimina la viñeta de los elementos li */
-      
+    
     }
     li dt, dd {
       /* Estilos para los elementos <a> dentro de <li> */
-      color: #02003A; /* Cambia el color del texto a rojo, por ejemplo */
+      color: #0b0a4d; /* Cambia el color del texto a rojo, por ejemplo */
       text-decoration: none;
       text-align:initial;
     }
@@ -61,7 +68,7 @@
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra */
       color: #FFFFFF; /* Color del texto */
       font-size:larger; /* Tamaño de fuente */
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Indie Flower" ;
       appearance: none; /* Oculta el estilo nativo del cuadro de selección */
     }
     .contenedor1 select {
@@ -77,7 +84,7 @@
       color: #333;
       border-radius: 5px;
       font-size:larger; /* Tamaño de fuente */
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Indie Flower" ;
     }
     /* Estilo para la lista desplegable personalizada */
     .contenedor1::after {
@@ -107,6 +114,9 @@
       /* Cambia el cursor al pasar el ratón sobre el botón */
       box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
       /* Añade una sombra */
+      margin-left: 70px;
+      font-family: "Itim" ;
+      font-size: xx-large;
     }
 
     .contenedor2 {
@@ -136,8 +146,32 @@
     #check{
       display: none;
     }
+    .tarjetas{
+      width: 100vw;
+      max-width: 1000px;
+      min-width: 320px;
+      margin: auto;  /* Centra el contenedor en la página */
     }
+    .tarjetas img{
+      width: 100%;      /* La imagen ocupa el 100% del ancho del contenedor */
+      height: auto;     /* Mantiene la proporción de aspecto original */
+     
+    }
+  .tarjetas dd{
+  width: 100%;      /* La imagen ocupa el 100% del ancho del contenedor */
+  height: auto;     /* Mantiene la proporción de aspecto original */
+ 
+}
+    }
+    /*li.listas{
+      width: 75vw;
+      max-width: 1000px;
+      min-width: 320px;
+      margin: auto;
+    }*/
+    
     @media (max-width: 600px){
+
       body {
         font-family: cursive;
         text-align: center;
@@ -147,6 +181,18 @@
         margin: 0; /* Eliminar el margen del cuerpo del documento */
         padding: 0; /* Eliminar el relleno del cuerpo del documento */
       }
+    
+    .tarjetas{
+      width: 75vw;
+      max-width: 1000px;
+      min-width: 320px;
+      margin: auto;  /* Centra el contenedor en la página */
+    }
+    .tarjetas img{
+      width: 100%;      /* La imagen ocupa el 100% del ancho del contenedor */
+      height: auto;     /* Mantiene la proporción de aspecto original */
+     
+    }
       .mostrar,
       .ocultar{
         display: block;
@@ -162,7 +208,7 @@
         position:fixed;
         width: 100%;
         height: 100vh;
-        background: #227000;
+        background: #86ca68;
         right: -100%;
         top: 0;
         text-align: center;
@@ -186,12 +232,17 @@
       #check:checked ~ .contenedor1{
         right: 0;
       }
+      
       main {
         padding: 10px; /* Agregamos un espacio interno para separar el contenido de los bordes */
         border-radius: 20px; /* Agregamos bordes redondeados */
-        background-color: #5959d2; /* Establecemos un color de fondo */
+        background-color: #8acd63; /* Establecemos un color de fondo */
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agregamos una sombra suave */
-        font-family: 'Bungee', cursive;
+        font-family: "Indie Flower" ;
+        font-size: 100%;
+        color: #146b00;
+    
+
       }
       #check {
         visibility: hidden;
@@ -208,4 +259,28 @@
         box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);/* Añade una sombra */
         
       }
+      li {
+        float: left;
+        width: calc(30% - 10px); /* 10px de margen derecho (5px + 5px) se restan del 30% */
+        background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("https://static.vecteezy.com/system/resources/previews/004/948/426/non_2x/cartoon-comic-cloud-copy-space-background-on-blue-free-vector.jpg");
+        /* La capa de fondo transparente se crea con linear-gradient */
+        margin-right: 20px; /* Aumenta el margen derecho si lo deseas */
+        margin-bottom: 20px;
+        margin-top: 50px;
+        border-radius: 20px;
+        border: 5px solid #014B9B;
+        font-family: "Itim";
+        font-size:x-large;
+        font-weight: 700; /* Tamaño de fuente grande */
+        list-style-type: none; /* Elimina la viñeta de los elementos li */
+        width: 75vw;
+        max-width: 1000px;
+        min-width: 320px;
+        margin: auto;
+      
+      }
+
+    
+  
+
     }
