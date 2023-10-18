@@ -68,7 +68,7 @@ filtroOrden.addEventListener("change", soloUnFiltro);//nuestra solo un filtro
 const parrafo_estadistica = document.getElementById('facts');
 parrafo_estadistica.addEventListener('click', function () {
   const informacion_eades = computeStats(data);
-  parrafo_estadistica.innerHTML = "Sabias que: " + informacion_eades.menoresDe30 + " de estos personajes son menores de 30" + " y " + informacion_eades.mayoresDe30 + " de ellos son mayores de 30";
+  parrafo_estadistica.innerHTML = "¿Sabías qué...? " + informacion_eades.menoresDe30 + " de los personajes son menores de 30 años" + " y " + informacion_eades.mayoresDe30 + " de ellos son mayores de 30 años...!!!";
   console.log(informacion_eades);
 });
 

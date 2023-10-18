@@ -239,17 +239,17 @@ export default [
     }
   },
   {
-    "id": "018",
-    "lastname": "amistades",
-    "name": "Apu Nahasapeemapetilon",
-    "shortDescription": "Propietario de la tienda Kwik-E-Mart y ciudadano de Springfield.",
-    "description": "Apu es un personaje de la serie de televisión 'Los Simpson'...",
-    "imageUrl": "https://ichef.bbci.co.uk/news/640/cpsprodpb/462D/production/_110556971_3d119fbe-d415-4709-b604-440aadcb1fff.jpg",
-    "edad": "37 años",
+    "id":"018",
+    "lastname": "Mann",
+    "name": "Otto Mann",
+    "shortDescription": "Conductor de autobús escolar y músico ocasional.",
+    "description": "Otto es un personaje de la serie de televisión 'Los Simpson'. Es conocido por ser el conductor del autobús escolar de la Escuela Primaria de Springfield...",
+    "imageUrl": "https://www.lifeboxset.com/wp-content/uploads/2023/01/otto-2023-01-19_08-05-15.jpg",
+    "edad": "26 años",
     "facts": {
-      "yearOfBirth": 1960,
-      "placeOfBirth": "India",
-      "mainField": "Convenience Store Management",
+      "yearOfBirth": 1970,
+      "placeOfBirth": "Springfield, USA",
+      "mainField": "Conducir y escuchar musica",
     }
   },
   {
