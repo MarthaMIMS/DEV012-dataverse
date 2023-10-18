@@ -8,6 +8,7 @@ export const renderItems = (data) => {
     const lista = document.createElement('li');
     lista.setAttribute('class', 'listas');
     lista.setAttribute('itemscope', '');
+    lista.setAttribute('itemtype','');
     lista.setAttribute('itemprop', item.id);
     ul.appendChild(lista);
 

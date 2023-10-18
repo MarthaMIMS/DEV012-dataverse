@@ -1,6 +1,8 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@600&family=Itim&display=swap');
   @media (min-width: 601px) {
     body {
       font-family: "Indie Flower" ;
@@ -15,7 +17,6 @@
     header {
       font-size: medium;
       font-family: "Indie Flower" ;
-      
       padding: 20px;
     }
     main {
@@ -36,54 +37,71 @@
       width: 60%;
       margin-left: 20%;
       margin-right: 2%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      
+
     }
     li {
-      float: left;
+      display: flex;
       width: calc(30% - 10px); /* 10px de margen derecho (5px + 5px) se restan del 30% */
       background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("https://static.vecteezy.com/system/resources/previews/004/948/426/non_2x/cartoon-comic-cloud-copy-space-background-on-blue-free-vector.jpg");
       /* La capa de fondo transparente se crea con linear-gradient */
-      margin-right: 20px; /* Aumenta el margen derecho si lo deseas */
+      margin-right: 10px; /* Aumenta el margen derecho si lo deseas */
       margin-bottom: 20px;
       margin-top: 50px;
       border-radius: 20px;
       border: 5px solid #014B9B;
-      font-family: "Itim";
-      font-size:medium;
+      font-family: "Gluten";
+      font-size:100%;
       font-weight: 700; /* Tamaño de fuente grande */
       list-style-type: none; /* Elimina la viñeta de los elementos li */
+      height: 300px;
+      width: 180px;
+    
       
     }
-    li dt, dd {
+   li, dt, dd {
       /* Estilos para los elementos <a> dentro de <li> */
-      color: #02003A; /* Cambia el color del texto a rojo, por ejemplo */
+      color: #02003A; /* Cambia el color del texto */
       text-decoration: none;
       text-align:initial;
+      display: flex;
+      flex-wrap: wrap;
     }
     .contenedor1, h2 {
-      background-color: #4A9F2D; /* Color de fondo */
-      border: 5px solid #347e19d3; /* Borde */
-      padding: 5px; /* Espaciado interno */
-      margin: 20px; /* Margen externo */
-      border-radius: 30px; /* Bordes redondeados */
-      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra */
-      color: #FFFFFF; /* Color del texto */
-      font-size:larger; /* Tamaño de fuente */
-      font-family: "Indie Flower" ;
-      appearance: none; /* Oculta el estilo nativo del cuadro de selección */
+      background-color: #4A9F2D;/*cambia el color de fondo*/
+      border: 5px solid #347e19d3;/*cambia el color del borde*/
+      padding: 5px;
+      margin: 20px;
+      border-radius: 30px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      color: #FFFFFF;
+      font-size: larger;
+      font-family: "Indie Flower";
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center; /* Centrar verticalmente */
+      justify-content: center; /* Centrar horizontalmente */
     }
+    
     .contenedor1 select {
       padding: 5px;
       border: 3px solid #227000;
       border-radius: 5px;
       background-color: #E2F3D5;
+      
     }
+
     /* Estilo para las opciones personalizadas */
     .contenedor1 select option {
       padding: 5px;
       background-color: #fff;
       color: #333;
       border-radius: 5px;
-      font-size:larger; /* Tamaño de fuente */
+      font-size:large; /* Tamaño de fuente */
       font-family: "Indie Flower" ;
     }
     /* Estilo para la lista desplegable personalizada */
@@ -96,6 +114,7 @@
       border-width: 5px;
       border-style: solid;
       pointer-events: none;
+      text-align: center;
     }
     #limpiar, #facts {
       background-color: rgb(34, 77, 0);
@@ -116,7 +135,7 @@
       /* Añade una sombra */
       margin-left: 70px;
       font-family: "Itim" ;
-      font-size: xx-large;
+      font-size: x-large;
     }
 
     .contenedor2 {
@@ -146,7 +165,20 @@
     #check{
       display: none;
     }
+
     }
+
+    .tarjetas{
+      width: 100vw;
+      max-width: 1000px;
+      min-width: 320px;
+      margin: auto;  /* Centra el contenedor en la página */
+    }
+    .tarjetas img{
+      width: 100%;      /* La imagen ocupa el 100% del ancho del contenedor */
+      height:150px;  /* Mantiene la proporción de aspecto original */
+    }
+
     @media (max-width: 600px){
 
       body {
@@ -158,6 +190,11 @@
         margin: 0; /* Eliminar el margen del cuerpo del documento */
         padding: 0; /* Eliminar el relleno del cuerpo del documento */
       }
+      .imagenFamilia{
+        display: none;
+
+      }
+      
       .mostrar,
       .ocultar{
         display: block;
@@ -171,7 +208,7 @@
       }
       .contenedor1{
         position:fixed;
-        width: 100%;
+        width: 50%;
         height: 100vh;
         background: #86ca68;
         right: -100%;
@@ -182,6 +219,7 @@
         transition: 0.8s;
         font-size:larger; /* Tamaño de fuente */
         font-family: Arial, Helvetica, sans-serif;
+        
       }
       .contenedor1 label{
         display: block;
@@ -195,18 +233,13 @@
       #check:checked ~ .contenedor1{
         right: 0;
       }
-      
-      main {
-        padding: 10px; /* Agregamos un espacio interno para separar el contenido de los bordes */
-        border-radius: 20px; /* Agregamos bordes redondeados */
-        background-color: #8acd63; /* Establecemos un color de fondo */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agregamos una sombra suave */
-        font-family: "Indie Flower" ;
-        font-size: 100%;
-        color: #146b00;
-    
 
+      h2{
+        display: none;
+        border-radius: 5px;
+        background-color: #c5c5d5
       }
+  
       #check {
         visibility: hidden;
       }
@@ -222,7 +255,66 @@
         box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);/* Añade una sombra */
         
       }
+      .listas {
+        width: calc(30% - 10px); /* 10px de margen derecho (5px + 5px) se restan del 30% */
+        background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("https://static.vecteezy.com/system/resources/previews/004/948/426/non_2x/cartoon-comic-cloud-copy-space-background-on-blue-free-vector.jpg");
+        /* La capa de fondo transparente se crea con linear-gradient */
+        margin-right: 100px; /* Aumenta el margen derecho si lo deseas */
+        margin-bottom: 20px;
+        margin-top: 50px;
+        border-radius: 20px;
+        border: 5px solid #014B9B;
+        font-family: "Gluten";
+        font-size:100%;
+        font-weight: 700; /* Tamaño de fuente grande */
+        list-style-type: none; /* Elimina la viñeta de los elementos li */
+        width: 100vw;
+        max-width: 120px;
+        min-width: 210px;
+        /*margin: auto;  /* Centra el contenedor en la página */
+      
+      }
+     li dt, dd {
+        /* Estilos para los elementos <a> dentro de <li> */
+        color: #02003A; /* Cambia el color del texto */
+        text-decoration: none;
+        text-align:initial;
+        display: flex;
+        flex-wrap: wrap;
+  
+      }
+  
+      label {
+        
+        color: #254805; /* Color del texto */
+        font-family: "Indie Flower" ;
+        font-size: x-large; 
+        font-weight: 900;
+      }
 
+      footer {
+        position:fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #7B3D87; /* Color de fondo del footer */
+        color: #fff; /* Color de texto del footer */
+        padding: 0; /* Espaciado interior del footer */
+        text-align: center; /* Alineación del texto en el centro */
+      }
+      /* Estilo para el contenedor Flexbox */
+#root {
+  display: flex;
+  justify-content: center;
+  /*align-items: center;*/
+  height: 1150vh; /* Ajusta la altura según tus necesidades */
+  width: 120%;
+
+}
+
+/* Estilo para la div con la clase "tarjetas" */
+.tarjetas {
+  width: 150%; /* O ajusta según tus necesidades */
+}
     
   
 
