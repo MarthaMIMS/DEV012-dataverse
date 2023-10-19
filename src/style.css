@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@600&family=Itim&display=swap');
-  @media (min-width: 601px) {
+
     body {
       font-family: "Indie Flower" ;
       text-align: center;
@@ -18,6 +18,8 @@
       font-size: medium;
       font-family: "Indie Flower" ;
       padding: 20px;
+      display:flex;
+      flex-wrap: wrap;
     }
     main {
       padding: 0; /* Espaciado interior del elemento <main> */
@@ -43,7 +45,7 @@
       
 
     }
-    li {
+    .listas {
       display: flex;
       width: calc(30% - 10px); /* 10px de margen derecho (5px + 5px) se restan del 30% */
       background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("https://static.vecteezy.com/system/resources/previews/004/948/426/non_2x/cartoon-comic-cloud-copy-space-background-on-blue-free-vector.jpg");
@@ -164,8 +166,6 @@
     }
     #check{
       display: none;
-    }
-
     }
 
     .tarjetas{
