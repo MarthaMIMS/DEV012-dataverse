@@ -19,29 +19,37 @@ boton.addEventListener('click', function (event) {
   dataview.innerHTML = '';
   dataview.appendChild(datalist);
   parrafo_estadistica.innerHTML = "Facts";
+  parrafo_genero.innerHTML = "Info:";
 });
 
 
 const filtroClave = document.querySelector('select[data-testid="select-filter"]');//nos da el valor seleccionado
 const filtroOrden = document.querySelector('select[data-testid="select-sort"]');//nos da el valor seleccionado
-
+const parrafo_genero = document.getElementById('genero');
 
 function soloUnFiltro() {//checa si hemos seleccionado un algo o algo vacio
   const claveSeleccionada = filtroClave.value;
   const ordenSeleccionado = filtroOrden.value;
   dataview.innerHTML = '';
+  parrafo_genero.innerHTML = '';
 
   if (claveSeleccionada) {
     // si se  selecciona un campo del filtro
     const datosFiltrados = filterData(data, claveSeleccionada);// lo guarda en esta variable 
+
+    console.log(datosFiltrados);
+    const informacion_Genero = computeStats(datosFiltrados);
+    parrafo_genero.innerHTML = "info:" + informacion_Genero.generoContador;
 
     if (ordenSeleccionado) {
       // Se ha seleccionado un campo de ordenamiento
       const datosOrdenados = sortData(datosFiltrados, 'name', ordenSeleccionado);// lo guarda en esta variable 
       datalist = renderItems(datosOrdenados);//renderizamos 
       dataview.appendChild(datalist)
+      // console.log(informacion_Genero.generoContador);
     } else {
       // No se ha seleccionado un campo de ordenamiento
+
       datalist = renderItems(datosFiltrados);
       dataview.appendChild(datalist)
       //  console.log(datosFiltrados);
@@ -64,7 +72,6 @@ const parrafo_estadistica = document.getElementById('facts');
 parrafo_estadistica.addEventListener('click', function () {
   const informacion_eades = computeStats(data);
   parrafo_estadistica.innerHTML = "¿Sabías qué...? " + informacion_eades.menoresDe30 + " de los personajes son menores de 30 años" + " y " + informacion_eades.mayoresDe30 + " de ellos son mayores de 30 años...!!!";
-  console.log(informacion_eades);
 });
 
 
