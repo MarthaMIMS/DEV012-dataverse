@@ -4,11 +4,6 @@ import { sortData } from './dataFunctions.js';
 import { computeStats } from './dataFunctions.js';
 import data from './data/dataset.js';
 
-
-const footer = document.createElement('footer');
-footer.innerHTML = 'Autoras: Martha Melitón & Daniela Bustamante';
-document.body.appendChild(footer);
-
 const dataview = document.getElementById('root');
 let datalist = renderItems(data);
 dataview.appendChild(datalist);
@@ -72,4 +67,11 @@ parrafo_estadistica.addEventListener('click', function () {
   console.log(informacion_eades);
 });
 
+
+const parrafo_estadistica2 = document.getElementById('facts2');
+parrafo_estadistica2.addEventListener('click', function(){
+  const infoGenero = computeStats(data);
+  parrafo_estadistica2.innerHTML = "Por cada familia existe " +infoGenero.hombres + "y " + infoGenero.mujeres + "son mujeres" 
+  console.log(infoGenero);
+})
 

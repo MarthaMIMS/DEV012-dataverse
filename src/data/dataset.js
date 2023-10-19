@@ -1,6 +1,7 @@
 export default [
   {
     "id": "001",
+    "genero":"m",
     "lastname": "simpson",
     "name": "Homero Simpson",
     "shortDescription": "Padre de familia y trabajador en la planta nuclear de Springfield.",
@@ -15,6 +16,7 @@ export default [
   },
   {
     "id": "002",
+    "genero":"f",
     "lastname": "simpson",
     "name": "Marge Simpson",
     "shortDescription": "Madre y ama de casa, conocida por su distintivo cabello azul.",
@@ -29,9 +31,9 @@ export default [
   },
   {
     "id": "003",
-    "name": "Lisa Simpson",
+    "genero":"f",
     "lastname": "simpson",
-    "roll": "Estudiante de primaria",
+    "name": "Lisa Simpson",
     "shortDescription": "Inteligente y comprometida, miembro de la familia Simpson.",
     "description": "Lisa es la hija mediana de la familia Simpson. Aunque a menudo es la voz de la razón en su hogar, también es una talentosa músico y defensora de los derechos sociales.",
     "imageUrl": "https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2022/09/19/16635806462937.png",
@@ -44,6 +46,7 @@ export default [
   },
   {
     "id": "004",
+    "genero":"m",
     "lastname": "simpson",
     "name": "Bart Simpson",
     "shortDescription": "Travieso y bromista, el hijo mayor de la familia Simpson.",
@@ -58,6 +61,7 @@ export default [
   },
   {
     "id": "005",
+    "genero":"f",
     "lastname": "simpson",
     "name": "Maggie Simpson",
     "shortDescription": "La más joven de la familia Simpson, conocida por su chupete.",
@@ -72,6 +76,7 @@ export default [
   },
   {
     "id": "006",
+    "genero":"m",
     "lastname": "simpson",
     "name": "Abraham Simpson",
     "shortDescription": "El patriarca anciano de la familia Simpson.",
@@ -86,6 +91,7 @@ export default [
   },
   {
     "id": "007",
+    "genero":"m",
     "lastname": "flanders",
     "name": "Ned Flanders",
     "shortDescription": "Amable vecino y amigo de la familia Simpson.",
@@ -100,6 +106,7 @@ export default [
   },
   {
     "id": "008",
+    "genero":"f",
     "lastname": "flanders",
     "name": "Maude Flanders",
     "shortDescription": "Vecina y amiga de la familia Simpson.",
@@ -114,6 +121,7 @@ export default [
   },
   {
     "id": "009",
+    "genero":"m",
     "lastname": "amistades",
     "name": "Krusty el Payaso",
     "shortDescription": "Presentador de televisión y payaso famoso en Springfield.",
@@ -128,6 +136,7 @@ export default [
   },
   {
     "id": "010",
+    "genero":"m",
     "lastname": "amistades",
     "name": "Charles Montgomery Burns",
     "shortDescription": "El multimillonario propietario de la Planta Nuclear de Springfield.",
@@ -142,6 +151,7 @@ export default [
   },
   {
     "id": "011",
+    "genero":"m",
     "lastname": "amistades",
     "name": "Waylon Smithers",
     "shortDescription": "Asistente ejecutivo y leal asistente del Sr. Burns en la Planta Nuclear de Springfield.",
@@ -156,6 +166,7 @@ export default [
   },
   {
     "id": "012",
+    "genero":"m",
     "lastname": "amistades",
     "name": "Moe Szyslak",
     "shortDescription": "Propietario de la Taberna de Moe y amigo de Homer Simpson.",
@@ -170,6 +181,7 @@ export default [
   },
   {
     "id": "013",
+    "genero":"m",
     "lastname": "asmitades",
     "name": "Barney Gumble",
     "shortDescription": "Amigo de Homer Simpson, conocido por su amor por la cerveza.",
@@ -184,6 +196,7 @@ export default [
   },
   {
     "id": "014",
+    "genero":"m",
     "lastname": "amistades",
     "name": "Lenny Leonard",
     "shortDescription": "Amigo de Homer Simpson y trabajador en la Planta Nuclear de Springfield.",
@@ -198,6 +211,7 @@ export default [
   },
   {
     "id": "015",
+    "genero":"m",
     "lastname": "amistades",
     "name": "Carl Carlson",
     "shortDescription": "Amigo de Homer y trabajador en la Planta de Energía Nuclear de Springfield.",
@@ -212,6 +226,7 @@ export default [
   },
   {
     "id": "016",
+    "genero":"m",
     "lastname": "amistades",
     "name": "Seymour Skinner",
     "shortDescription": "Director de la Escuela Primaria de Springfield y ex militar.",
@@ -226,6 +241,7 @@ export default [
   },
   {
     "id": "017",
+    "genero":"f",
     "lastname": "amistades",
     "name": "Edna Krabappel",
     "shortDescription": "Profesora en la Escuela Primaria de Springfield.",
@@ -240,6 +256,7 @@ export default [
   },
   {
     "id":"018",
+    "genero":"m",
     "lastname": "Mann",
     "name": "Otto Mann",
     "shortDescription": "Conductor de autobús escolar y músico ocasional.",
@@ -254,6 +271,7 @@ export default [
   },
   {
     "id": "019",
+    "genero":"m",
     "lastname": "amistades",
     "name": "Milhouse Van Houten",
     "shortDescription": "Mejor amigo de Bart Simpson y compañero de clase en la Escuela Primaria de Springfield.",
@@ -268,6 +286,7 @@ export default [
   },
   {
     "id": "020",
+    "genero":"m",
     "lastname": "amistades",
     "name": "Dr. Julius Hibbert",
     "shortDescription": "Médico de Springfield y amigo de la familia Simpson.",
@@ -282,6 +301,7 @@ export default [
   },
   {
     "id": "021",
+    "genero":"m",
     "lastname": "amistades",
     "name": "Sideshow Bob (Tahiti Bob)",
     "shortDescription": "Ex asistente de Krusty el Payaso y archienemigo de Bart Simpson.",
@@ -296,6 +316,7 @@ export default [
   },
   {
     "id": "022",
+    "genero":"m",
     "lastname": "wiggum",
     "name": "Ralph Wiggum",
     "shortDescription": "Estudiante de la Escuela Primaria de Springfield y miembro de la familia Wiggum.",
@@ -310,6 +331,7 @@ export default [
   },
   {
     "id": "023",
+    "genero":"f",
     "lastname": "bouvier",
     "name": "Patty y Selma Bouvier",
     "shortDescription": "Hermanas de Marge Simpson y empleadas del Departamento de Policía de Springfield.",
@@ -324,6 +346,7 @@ export default [
   },
   {
     "id": "024",
+    "genero":"m",
     "lastname": "wiggum",
     "name": "Clancy Wiggum",
     "lastname": "wiggum",
