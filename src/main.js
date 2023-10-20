@@ -20,7 +20,7 @@ boton.addEventListener('click', function (event) {
   dataview.innerHTML = '';
   dataview.appendChild(datalist);
   parrafo_estadistica.innerHTML = "Facts";
-  parrafo_genero.innerHTML = "Info:";
+  parrafo_genero.innerHTML = '';
 });
 
 
@@ -40,7 +40,7 @@ function soloUnFiltro() {//checa si hemos seleccionado un algo o algo vacio
 
     console.log(datosFiltrados);
     const informacion_Genero = computeStats(datosFiltrados);
-    parrafo_genero.innerHTML = "info:" + informacion_Genero.generoContador;
+    parrafo_genero.innerHTML = "info: " +"En esta familia hay: " + informacion_Genero.hombres + " hombres y "+ informacion_Genero.mujeres + " mujeres"
 
     if (ordenSeleccionado) {
       // Se ha seleccionado un campo de ordenamiento

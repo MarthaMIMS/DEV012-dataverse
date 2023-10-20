@@ -43,9 +43,9 @@ export function computeStats(data) {
       mujeres++;
     }
   }
-  const generos = { hombres, mujeres };
-  console.log(generos);
-  return { ...estadistica, generos, arrayGenero };
+  //const generos = { hombres, mujeres };
+  console.log(hombres, mujeres);
+  return { ...estadistica,hombres, mujeres, arrayGenero };
 }
 
 /* //creamos otra estadistica con .map
