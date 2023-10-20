@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@600&family=Itim&display=swap');
 
     body {
-      font-family: "Indie Flower" ;
+      font-family: "Indie Flower";
       text-align: center;
       background-image: url("https://images3.alphacoders.com/591/591067.jpg");
       background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con 50% de transparencia */
@@ -14,11 +14,16 @@
     
     }
     header {
-      font-size: medium;
-      font-family: "Indie Flower" ;
-      padding: 20px;
-      display:flex;
-      flex-wrap: wrap;
+      text-align: center;
+    }
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .imagenFamilia {
+      width: 260px;
+      height: 210px;
     }
     main {
       padding: 0; /* Espaciado interior del elemento <main> */
@@ -32,6 +37,16 @@
       font-family: "Indie Flower" ;
       font-size: x-large; 
       font-weight: 900;
+    }
+
+    p {
+      font-family: "Indie Flower" ;
+      font-size: 16px; /* Tamaño de fuente */
+      line-height: 1.5; /* Espaciado entre líneas */
+      margin: 0 0 20px; /* Márgenes superior e inferior */
+      color: #000000; /* Color del texto */
+      font-weight: 700;
+      font-size: x-large;
     }
     ul {
       text-align: center;
@@ -60,6 +75,7 @@
       list-style-type: none; /* Elimina la viñeta de los elementos li */
       height: 300px;
       width: 180px;
+      
     
       
     }
@@ -341,6 +357,10 @@
   .imagenFamilia {
     display: none;
   }
+  .imagenTitulo {
+    width: 70px; 
+    height: 50; 
+  }
   .mostrar,
   .ocultar {
     display: block;
@@ -426,6 +446,10 @@
     max-width: 120px;
     min-width: 210px;
     /*margin: auto;  /* Centra el contenedor en la página */
+    /*position: absolute;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .listas,
   dt,
@@ -472,4 +496,4 @@
     width: 150%;
     /* O ajusta según tus necesidades */
   }
-}
+}}

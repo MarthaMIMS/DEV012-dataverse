@@ -30,10 +30,6 @@ export const data = [
       "placeOfBirth": "Springfield, USA",
       "mainField": "Ama de Casa",
     }
-<<<<<<< HEAD
-  },
-=======
   }
->>>>>>> 6bf4427087eb2529cc1e18cd3407ccfe536fdac8
 ];
 

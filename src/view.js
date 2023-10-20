@@ -1,13 +1,12 @@
 export const renderItems = (data) => {
-
   // Aquí comienza tu código y puedes retornar lo que tu necesites
   const ul = document.createElement('ul');//creamos el ul fuera del for para que se cree una sola vez
-  data.forEach(data => {
+  data.forEach(item => {
     const lista = document.createElement('li');
     lista.classList.add("listas");
     lista.setAttribute('itemscope', '');
     lista.setAttribute('itemtype','');
-    lista.setAttribute('itemprop', data.id);
+    lista.setAttribute('itemprop', item.id);
     ul.appendChild(lista);
 
     const nombres = document.createElement('dl');
@@ -16,7 +15,7 @@ export const renderItems = (data) => {
     lista.appendChild(nombres);
 
     const imagen = document.createElement('img');
-    imagen.setAttribute('src', data.imageUrl);
+    imagen.setAttribute('src', item.imageUrl);
     imagen.setAttribute('alt', 'Personaje de los Simpson');
     imagen.setAttribute('width', '250');
     imagen.setAttribute('height', '180');
@@ -28,7 +27,7 @@ export const renderItems = (data) => {
 
     const dd1 = document.createElement('dd');
     dd1.setAttribute('itemprop', 'name');
-    dd1.innerHTML = data.name;
+    dd1.innerHTML = item.name;
     nombres.appendChild(dd1);
 
     const dt2 = document.createElement('dt');
@@ -37,7 +36,7 @@ export const renderItems = (data) => {
 
     const dd2 = document.createElement('dd');
     dd2.setAttribute('itemprop', 'edad');
-    dd2.innerHTML = data.edad;
+    dd2.innerHTML = item.edad;
     nombres.appendChild(dd2);
   });
 
