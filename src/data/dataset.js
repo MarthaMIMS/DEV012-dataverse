@@ -258,7 +258,7 @@ export default [
   {
     "id":"018",
     "genero":"m",
-    "lastname": "Mann",
+    "lastname": "amistades",
     "name": "Otto Mann",
     "shortDescription": "Conductor de autobús escolar y músico ocasional.",
     "description": "Otto es un personaje de la serie de televisión 'Los Simpson'. Es conocido por ser el conductor del autobús escolar de la Escuela Primaria de Springfield...",
