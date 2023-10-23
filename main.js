@@ -75,3 +75,4 @@ parrafo_estadistica.addEventListener('click', function () {
   parrafo_estadistica.innerHTML = "¿Sabías qué...? " + informacion_eades.menoresDe30 + " de los personajes son menores de 30 años" + " y " + informacion_eades.mayoresDe30 + " de ellos son mayores de 30 años...!!!";
 });
 
+

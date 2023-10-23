@@ -1,9 +1,12 @@
 export const renderItems = (data) => {
+
   // Aquí comienza tu código y puedes retornar lo que tu necesites
+  
+
   const ul = document.createElement('ul');//creamos el ul fuera del for para que se cree una sola vez
   data.forEach(item => {
     const lista = document.createElement('li');
-    lista.classList.add("listas");
+    lista.setAttribute('class', 'listas');
     lista.setAttribute('itemscope', '');
     lista.setAttribute('itemtype','');
     lista.setAttribute('itemprop', item.id);
