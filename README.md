@@ -63,7 +63,7 @@ Este proyecto nos brindó la oportunidad de aprender autodidactamente, explorand
 ## 7. Vista movíl
 
 ## 8. Pantalla de Prompt
-![https://github.com/MarthaMIMS/DEV012-dataverse/blob/feature-button/prompt.png]
+![](prompt.png)
 
 ## 9. Autoras del proyecto
 
