@@ -4,6 +4,7 @@ import { sortData } from './dataFunctions.js';
 import { computeStats } from './dataFunctions.js';
 import data from './data/dataset.js';
 
+
 const dataview = document.getElementById('root');
 let datalist = renderItems(data);
 dataview.appendChild(datalist);
@@ -73,12 +74,4 @@ parrafo_estadistica.addEventListener('click', function () {
   const informacion_eades = computeStats(data);
   parrafo_estadistica.innerHTML = "¿Sabías qué...? " + informacion_eades.menoresDe30 + " de los personajes son menores de 30 años" + " y " + informacion_eades.mayoresDe30 + " de ellos son mayores de 30 años...!!!";
 });
-
-
-const parrafo_estadistica2 = document.getElementById('facts2');
-parrafo_estadistica2.addEventListener('click', function(){
-  const infoGenero = computeStats(data);
-  parrafo_estadistica2.innerHTML = "Por cada familia existe " +infoGenero.hombres + "y " + infoGenero.mujeres + "son mujeres" 
-  console.log(infoGenero);
-})
 

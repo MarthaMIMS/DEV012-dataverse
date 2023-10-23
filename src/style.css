@@ -1,48 +1,77 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@600&family=Itim&display=swap');
 
-    body {
-      font-family: "Indie Flower" ;
-      text-align: center;
-      background-image: url("https://images3.alphacoders.com/591/591067.jpg");
-      background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con 50% de transparencia */
-      background-blend-mode: overlay;
-      margin: 0; /* Eliminar el margen del cuerpo del documento */
-      padding: 0; /* Eliminar el relleno del cuerpo del documento */
-    
-    }
-    header {
-      font-size: medium;
-      font-family: "Indie Flower" ;
-      padding: 20px;
-      display:flex;
-      flex-wrap: wrap;
-    }
-    main {
-      padding: 0; /* Espaciado interior del elemento <main> */
-      margin-left: 8%;
-      margin-right: 5%;
-      font-size:large;
-      /* Otros estilos personalizados según tus preferencias */
-    }
-    label {
-      color: #254805; /* Color del texto */
-      font-family: "Indie Flower" ;
-      font-size: x-large; 
-      font-weight: 900;
-    }
-    ul {
-      text-align: center;
-      width: 60%;
-      margin-left: 20%;
-      margin-right: 2%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      
+body {
+  font-family: "Indie Flower";
+  text-align: center;
+  background-image: url("https://images3.alphacoders.com/591/591067.jpg");
+  background-color: rgba(255, 255, 255, 0.5);
+  /* Fondo blanco con 50% de transparencia */
+  background-blend-mode: overlay;
+  margin: 0;
+  /* Eliminar el margen del cuerpo del documento */
+  padding: 0;
+  /* Eliminar el relleno del cuerpo del documento */
+
+}
+
+header {
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagenFamilia {
+  width: 260px;
+  height: 210px;
+}
+
+main {
+  padding: 0;
+  /* Espaciado interior del elemento <main> */
+  margin-left: 8%;
+  margin-right: 5%;
+  font-size: large;
+  /* Otros estilos personalizados según tus preferencias */
+}
+
+label {
+  color: #254805;
+  /* Color del texto */
+  font-family: "Indie Flower";
+  font-size: x-large;
+  font-weight: 900;
+}
+
+p {
+  font-family: "Indie Flower";
+  font-size: 16px;
+  /* Tamaño de fuente */
+  line-height: 1.5;
+  /* Espaciado entre líneas */
+  margin: 0 0 20px;
+  /* Márgenes superior e inferior */
+  color: #000000;
+  /* Color del texto */
+  font-weight: 700;
+  font-size: x-large;
+}
+
+ul {
+  text-align: center;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
 
 }
 
@@ -411,4 +440,7 @@ footer {
     width: 150%;
     /* O ajusta según tus necesidades */
   }
+
+
+
 }
