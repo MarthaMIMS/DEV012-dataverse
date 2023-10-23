@@ -19,7 +19,7 @@
 Con el objetivo de obtener una visión más completa y detallada de la ejecución del proyecto, se procedió a elaborar un prototipo de baja fidelidad utilizando la plataforma de diseño Figma. Este proceso abarcó la creación de dos versiones distintas del prototipo, una destinada a la visualización en escritorio y la otra diseñada para dispositivos móviles. La decisión de desarrollar ambos prototipos respondió a la necesidad de evaluar exhaustivamente la experiencia del usuario en diferentes contextos y tamaños de pantalla. La versión de escritorio se diseñó meticulosamente para captar la esencia y la funcionalidad de la interfaz en un entorno más amplio, mientras que la versión móvil se adaptó para garantizar una experiencia fluida y eficaz en dispositivos con pantallas de menor tamaño. Estos prototipos de baja fidelidad se convirtieron en una herramienta esencial en la fase inicial de planificación del proyecto, permitiendo una evaluación crítica de la usabilidad y la navegación, y sentando las bases para el desarrollo de prototipos de alta fidelidad y la posterior implementación del proyecto.
 
 ## 2. Imagen del Prototipo
-
+![](prototipo.png)
 
 ## 3. Definicion del Proyecto 
 
@@ -59,8 +59,10 @@ Durante el proyecto, nos enfrentamos a desafíos en la depuración y la optimiza
 Este proyecto nos brindó la oportunidad de aprender autodidactamente, explorando nuevas herramientas y técnicas, lo que fue una experiencia valiosa para nuestro desarrollo en programación.
 
 ## 6. Vista escritorio
+![](escritorio.png)
 
 ## 7. Vista movíl
+![](movil.png)
 
 ## 8. Pantalla de Prompt
 ![](prompt.png)
