@@ -24,7 +24,6 @@ IMAGEN DEL PROTOTIPO
 
 ## 3. Definicion del Proyecto 
 
-
 En ese proyecto, construimos una página web para mostrar información que generamos utilizando herramientas de inteligencia artificial.
 
 Para crear esos datos, utilicé herramientas como ChatGPT, que son asistentes impulsados por inteligencia artificial. Estas herramientas nos ayudaron a generar un conjunto de datos que guardamos en un archivo JavaScript.
