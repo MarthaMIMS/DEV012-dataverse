@@ -59,6 +59,7 @@ Durante el proyecto, nos enfrentamos a desafíos en la depuración y la optimiza
 Este proyecto nos brindó la oportunidad de aprender autodidactamente, explorando nuevas herramientas y técnicas, lo que fue una experiencia valiosa para nuestro desarrollo en programación.
 
 ## 6. Vista escritorio
+En este link puedes visitar el sitio web. https://marthamims.github.io/DEV012-dataverse/
 ![](escritorio.png)
 
 ## 7. Vista movíl
