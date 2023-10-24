@@ -8,37 +8,31 @@ export const renderItems = (data) => {
     lista.setAttribute('itemtype','');
     lista.setAttribute('itemprop', item.id);
     ul.appendChild(lista);
-
     const nombres = document.createElement('dl');
     nombres.setAttribute('itemscope', '');
     nombres.setAttribute('itemtype', 'Personaje de los Simpson');
     lista.appendChild(nombres);
-
     const imagen = document.createElement('img');
     imagen.setAttribute('src', item.imageUrl);
     imagen.setAttribute('alt', 'Personaje de los Simpson');
-    imagen.setAttribute('width', '250');
-    imagen.setAttribute('height', '180');
     nombres.appendChild(imagen);
-
     const dt1 = document.createElement('dt');
     dt1.innerHTML = 'Nombre:';
     nombres.appendChild(dt1);
-
     const dd1 = document.createElement('dd');
     dd1.setAttribute('itemprop', 'name');
     dd1.innerHTML = item.name;
     nombres.appendChild(dd1);
-
     const dt2 = document.createElement('dt');
     dt2.innerHTML = 'Edad:';
     nombres.appendChild(dt2);
-
     const dd2 = document.createElement('dd');
     dd2.setAttribute('itemprop', 'edad');
     dd2.innerHTML = item.edad;
     nombres.appendChild(dd2);
   });
-
   return ul;
 };
+
+
+
