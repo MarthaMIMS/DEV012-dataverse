@@ -1,14 +1,14 @@
 export function filterData(data, filterBy) {
-  const familiasimpson = data.filter(filtro1 => filtro1.lastname === filterBy);
-  return familiasimpson;
+  const apellidosFamilias = data.filter(filtro1 => filtro1.lastname === filterBy);
+  return apellidosFamilias;
 }
 
 export function sortData(data, sortBy, sortOrder) {
   // Crear una copia de los datos originales
-  const sortedData = data.slice();
+  const sortedData = data.slice();//devuelve una copia de una parte del array dentro de un nuevo array empezando por inicio hasta fin 
 
   if (sortBy) { // Verifica si se ha seleccionado un campo de ordenamiento
-    sortedData.sort((a, b) => {
+    sortedData.sort((a, b) => {//devuelve el arreglo ordenado se requiere de dos parametros para comparar 
       const nameA = a[sortBy].toLowerCase();
       const nameB = b[sortBy].toLowerCase();
 
@@ -43,5 +43,6 @@ export function computeStats(data) {
       mujeres++;
     }
   }
+  
   return { ...estadistica,hombres, mujeres, arrayGenero };
 }

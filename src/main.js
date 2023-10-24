@@ -40,7 +40,7 @@ function soloUnFiltro() {//checa si hemos seleccionado un algo o algo vacio
 
     console.log(datosFiltrados);
     const informacion_Genero = computeStats(datosFiltrados);
-    parrafo_genero.innerHTML = "Info: " +"En esta familia hay " + "hombres: " + informacion_Genero.hombres + " , "+ " mujeres: " + informacion_Genero.mujeres 
+    parrafo_genero.innerHTML = "Fact: " +"En esta familia hay " + "hombres: " + informacion_Genero.hombres + " , "+ " mujeres: " + informacion_Genero.mujeres 
 
     if (ordenSeleccionado) {
       // Se ha seleccionado un campo de ordenamiento
