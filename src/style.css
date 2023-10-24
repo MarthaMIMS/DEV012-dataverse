@@ -245,7 +245,7 @@ footer {
   /* Mantiene la proporción de aspecto original */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 312px) {
 
   body {
     font-family: cursive;
