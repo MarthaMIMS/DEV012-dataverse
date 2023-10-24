@@ -1,14 +1,14 @@
 export function filterData(data, filterBy) {
-  const familiasimpson = data.filter(filtro1 => filtro1.lastname === filterBy);
-  return familiasimpson;
+  const apellidosFamilias = data.filter(filtro1 => filtro1.lastname === filterBy);
+  return apellidosFamilias;
 }
 
 export function sortData(data, sortBy, sortOrder) {
   // Crear una copia de los datos originales
-  const sortedData = data.slice();
+  const sortedData = data.slice();//devuelve una copia de una parte del array dentro de un nuevo array empezando por inicio hasta fin 
 
   if (sortBy) { // Verifica si se ha seleccionado un campo de ordenamiento
-    sortedData.sort((a, b) => {
+    sortedData.sort((a, b) => {//devuelve el arreglo ordenado se requiere de dos parametros para comparar 
       const nameA = a[sortBy].toLowerCase();
       const nameB = b[sortBy].toLowerCase();
 
@@ -43,22 +43,6 @@ export function computeStats(data) {
       mujeres++;
     }
   }
-  //const generos = { hombres, mujeres };
-  console.log(hombres, mujeres);
+  
   return { ...estadistica,hombres, mujeres, arrayGenero };
 }
-
-/* //creamos otra estadistica con .map
- const estadistica2 = data.map((personaje) => {//crea un nuevo arreglo desde estadistica2
-   if (personaje.genero === 'f') {//Si genero es igual a f
-     return { mujeres: 1, hombres: 0 };//crea un objeto con el nombre mujeres
-   } else if (personaje.genero === 'm') {//si no se cumple lo anterior
-     return { mujeres: 0, hombres: 1 };//crea un objeto con el nombre hombres
-   } else {//si no ocurre nada de los dos el genero no esta definido
-     return { mujeres: 0, hombres: 0 };//se inicia con un valor de 0 en cada parametro o propiedad
-   }
- });
- return { estadistica, estadistica2 };//devolvemos el valor de las dos estadisticas
-}*/
-
-
