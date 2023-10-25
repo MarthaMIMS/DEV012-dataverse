@@ -46,3 +46,7 @@ export function computeStats(data) {
   
   return { ...estadistica,hombres, mujeres, arrayGenero };
 }
+export function suma(a, b) {
+  return a + b;
+}
+
