@@ -6,7 +6,7 @@ export const renderItems = (data) => {
     lista.classList.add("listas");
     lista.setAttribute('itemscope', '');
     lista.setAttribute('itemtype','');
-    lista.setAttribute('itemprop', item.id);
+    //lista.setAttribute('itemprop', item.id);
     ul.appendChild(lista);
     const nombres = document.createElement('dl');
     nombres.setAttribute('itemscope', '');
