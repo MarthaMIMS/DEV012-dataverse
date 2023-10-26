@@ -30,7 +30,9 @@ export function computeStats(data) {
     acumulador.mayoresDe30 += edad >= 30 ? 1 : 0;
     return acumulador;
   }, { menoresDe30: 0, mayoresDe30: 0 });
-
+  return estadistica;
+}
+export function generoFacts(data) {
   const arrayGenero = data.map(personaje => personaje.genero);
   let mujeres = 0;
   let hombres = 0;
@@ -42,11 +44,8 @@ export function computeStats(data) {
     if (valoractual === 'f') {
       mujeres++;
     }
-  }
   
-  return { ...estadistica,hombres, mujeres, arrayGenero };
-}
-export function suma(a, b) {
-  return a + b;
+  }
+  return {hombres, mujeres};
 }
 
